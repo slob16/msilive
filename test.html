@@ -20,8 +20,7 @@
             margin: 0;
             overflow: hidden;
             font-family: 'Arial', sans-serif;
-            background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #1a1a1a;
         }
 
         /* Navbar Styling */
@@ -101,10 +100,12 @@
         #scroll-to-top:hover {
             background-color: #e67e22;
         }
-
     </style>
 </head>
 <body>
+
+    <!-- Three.js Canvas Background -->
+    <div id="threejs-container"></div>
 
     <!-- Navbar -->
     <header class="main-header-bar">
@@ -123,7 +124,7 @@
         </div>
     </header>
 
-    <!-- Three.js Scene -->
+    <!-- Brand Info Tooltip -->
     <div id="brandInfo">
         <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
         <div class="brand-name"></div>
@@ -132,98 +133,43 @@
     </div>
 
     <script>
-        // Three.js Scene Setup (Enhanced)
+        // Set up Three.js scene
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setClearColor(0x000000);
-        document.body.appendChild(renderer.domElement);
+        document.getElementById('threejs-container').appendChild(renderer.domElement);
 
-        // Generate Brands
-        const brands = Array.from({ length: 40 }, (_, i) => ({
-            name: `Brand ${i + 1}`,
-            description: `Innovative solutions for the modern business landscape. Leading the industry in Brand ${i + 1}'s specialized sector.`,
-            shortDesc: `Innovation leader in sector ${i + 1}`,
-            url: `https://brand${i + 1}.com`,
-            color: new THREE.Color().setHSL(i / 40, 1, 0.6)
-        }));
+        // Add a rotating cube for testing
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
 
-        // Create Brands on Sphere
-        const brandGroup = new THREE.Group();
-        scene.add(brandGroup);
+        camera.position.z = 5;
 
-        // Fibonacci Sphere Distribution
-        const phi = Math.PI * (3 - Math.sqrt(5));
-        brands.forEach((brand, i) => {
-            const y = 1 - (i / (brands.length - 1)) * 2;
-            const radius = Math.sqrt(1 - y * y);
-            const theta = phi * i;
+        // Animation Loop
+        function animate() {
+            requestAnimationFrame(animate);
 
-            const x = Math.cos(theta) * radius;
-            const z = Math.sin(theta) * radius;
+            // Rotate cube
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
 
-            const map = new THREE.TextureLoader().load('/api/placeholder/128/128');
-            const material = new THREE.SpriteMaterial({
-                map: map,
-                color: brand.color,
-                transparent: true,
-                blending: THREE.AdditiveBlending
-            });
-
-            const sprite = new THREE.Sprite(material);
-            sprite.position.set(x * 12, y * 12, z * 12);
-            sprite.scale.set(1.5, 1.5, 1.5);
-            sprite.userData = brand;
-            brandGroup.add(sprite);
-        });
-
-        // Camera Position
-        camera.position.z = 30;
-
-        // Mouse Interaction
-        const raycaster = new THREE.Raycaster();
-        const mouse = new THREE.Vector2();
-        let hoveredSprite = null;
-
-        function onMouseMove(event) {
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObjects(brandGroup.children);
-            
-            if (intersects.length > 0) {
-                const sprite = intersects[0].object;
-                if (hoveredSprite !== sprite) {
-                    if (hoveredSprite) {
-                        hoveredSprite.scale.set(1.5, 1.5, 1.5);
-                    }
-                    hoveredSprite = sprite;
-                    sprite.scale.set(2.5, 2.5, 2.5);
-
-                    // Update Brand Info
-                    const brandInfo = document.getElementById('brandInfo');
-                    brandInfo.querySelector('.brand-name').textContent = sprite.userData.name;
-                    brandInfo.querySelector('.brand-description').textContent = sprite.userData.description;
-                    brandInfo.querySelector('.visit-button').href = sprite.userData.url;
-                    brandInfo.style.opacity = '1';
-                }
-            } else if (hoveredSprite) {
-                hoveredSprite.scale.set(1.5, 1.5, 1.5);
-                hoveredSprite = null;
-                document.getElementById('brandInfo').style.opacity = '0';
-            }
+            renderer.render(scene, camera);
         }
 
-        // Window Resize
+        animate();
+
+        // Resize handling
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // Scroll-to-top Button
+        // Scroll-to-top button behavior
         const scrollToTopBtn = document.getElementById('scroll-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 200) {
@@ -235,19 +181,6 @@
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // Animation Loop
-        function animate() {
-            requestAnimationFrame(animate);
-            brandGroup.rotation.y += 0.001;
-            TWEEN.update();
-            renderer.render(scene, camera);
-        }
-
-        // Add Mousemove Event
-        window.addEventListener('mousemove', onMouseMove, false);
-
-        animate();
     </script>
 
     <!-- Footer -->
