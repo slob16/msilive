@@ -16,7 +16,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
-
+      <title>ecosystem</title>
+    <!-- External libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <style>
+        /* Styles for the body and canvas */
+        body { margin: 0; overflow: hidden; background: #000000; font-family: 'Arial', sans-serif; }
+        canvas { display: block; }
+        /* Styles for brand info panel */
+        #brandInfo {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            min-width: 300px;
+        }
+        .brand-logo { width: 80px; height: 80px; margin: 0 auto 15px; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+        .brand-name { font-size: 28px; margin-bottom: 15px; text-shadow: 0 0 15px rgba(255, 255, 255, 0.7); font-weight: bold; }
+        .brand-description { font-size: 18px; margin-bottom: 20px; color: rgba(255, 255, 255, 0.9); line-height: 1.4; }
+        .visit-button { display: inline-block; padding: 12px 30px; background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: none; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s; pointer-events: auto; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); font-size: 18px; font-weight: bold; }
+        .visit-button:hover { background: rgba(255, 255, 255, 0.2); box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); transform: translateY(-2px); }
+    </style>
 </head>
 
 <body>
@@ -105,6 +137,14 @@
 <body>
 
             <!--Services Section -->
+    <!-- Brand information panel -->
+    <div id="brandInfo">
+        <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
+        <div class="brand-name"></div>
+        <div class="brand-description"></div>
+        <a href="#" class="visit-button" target="_blank">Visit Website</a>
+    </div>
+  
             const glowGeometry = new THREE.SphereGeometry(0.5, 32, 32);
             const glowMaterial = new THREE.MeshBasicMaterial({
                 color: brand.color,
