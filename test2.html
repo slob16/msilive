@@ -102,43 +102,18 @@
 
 
             <!--Services Section-->
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Container</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    .container {
-      display: flex; /* Use flex for responsiveness */
-      flex-direction: column; /* Align children vertically */
-      height: 100%; /* Full-page height */
-      box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
-      padding: 16px; /* Optional padding */
-    }
-    .header, .footer {
-      flex: 0 0 auto; /* Fixed height sections */
-      background: lightgray;
-      padding: 10px;
-    }
-    .content {
-      flex: 1 1 auto; /* Grow to take available space */
-      background: #f0f0f0;
-      overflow: auto; /* Allow scrolling if needed */
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">Header</div>
-    <div class="content">Main Content</div>
-    <div class="footer">Footer</div>
-  </div>
+ <!-- Services Section -->
+<section class="services-section" id="services">
+    <div class="auto-container">
+        <h2>Our Services</h2>
+        
+        <!-- Responsive Container for Dynamic Content -->
+        <div class="service-container" id="service-content">
+            <!-- Dynamic content will be injected here via JS -->
+        </div>
+    </div>
+</section>
+<!-- End Services Section -->
 
                                         </div>
                                     </div>
