@@ -11,7 +11,20 @@ container.appendChild(renderer.domElement);
 const brandGroup = new THREE.Group();
 scene.add(brandGroup);
 
-const nodes = []; // Replace with your nodes array or logic
+// Dynamically populate nodes
+const nodes = [];
+for (let i = 0; i < 10; i++) {
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ color: 0xffffff }));
+  sprite.position.set(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
+  sprite.userData = {
+    name: `Node ${i + 1}`,
+    description: `This is node ${i + 1}`,
+    url: `https://example.com/node${i + 1}`,
+    color: new THREE.Color(Math.random(), Math.random(), Math.random())
+  };
+  nodes.push(sprite);
+  brandGroup.add(sprite);
+}
 
 // Add glow effect
 nodes.forEach(sprite => {
