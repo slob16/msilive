@@ -136,8 +136,32 @@
          url('../fonts/Telegraf-UltraBold.svg#Telegraf_UltraBold') format('svg');
     font-weight: normal;
     font-style: normal;
+
+====================================================================
+
+  Reset
+
+====================================================================
+
+ ***/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
 }
 
+/*** 
+
+====================================================================
+
+  Global Settings
+
+====================================================================
+
+ ***/
+}
 body {
   font-family: 'Cairo', sans-serif;
   font-size: 16px;
