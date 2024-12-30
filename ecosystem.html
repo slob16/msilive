@@ -75,8 +75,32 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 100px; /* Adjust the logo size */
+            width: 150px; /* Increased logo size */
             height: auto;
+        }
+        /* Breadcrumb style */
+        .breadcrumb {
+            position: absolute;
+            top: 120px; /* Adjusted for spacing below logo */
+            left: 10px;
+            font-size: 16px;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: #f0f0f0;
+        }
+        .breadcrumb span {
+            color: #888;
         }
         /* Style for the copyright text in the bottom-right */
         .copyright {
@@ -85,6 +109,7 @@
             right: 10px;
             color: #fff;
             font-size: 14px;
+            font-family: 'Arial', sans-serif;
             font-weight: bold;
             z-index: 999;
         }
@@ -93,6 +118,13 @@
 <body style="background-image: url('your-background-url-here.jpg'); background-size: cover; background-position: center;">
     <!-- Placeholder for Media Stacks Logo -->
     <img src="images/logo.png" alt="Media Stacks Logo" class="top-left-logo">
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>&gt;</span>
+        <span>Ecosystem</span>
+    </div>
 
     <!-- Brand Info Section -->
     <div id="brandInfo">
@@ -289,4 +321,3 @@
     </script>
 </body>
 </html>
-
