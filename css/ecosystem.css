@@ -165,10 +165,10 @@
 body {
   font-family: 'Cairo', sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #faf9f6;
   line-height: 1.60em;
   font-weight: 400;
-  background: #101010;
+  background: #1d1d1d;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   cursor: none;
@@ -199,12 +199,12 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 400;
   margin: 0 0 15px;
   background: none;
-  color: #ffffff;
+  color: #faf9f6;
   line-height: 1.33em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 h1{
