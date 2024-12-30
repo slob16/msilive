@@ -3,7 +3,7 @@ body {
     margin: 0;
     overflow: hidden;
     background: #1d1d1d;
-    font-family: 'Arial', sans-serif;
+    font-family: font awesome 6 pro';
 }
 
 canvas {
@@ -87,8 +87,8 @@ canvas {
     font-size: 14px;
     color: #faf9f6;
     font-family: font awesome 6 pro';
-    font-weight: medium;
-    display: flex;
+    font-weight: light;
+    display: relative;
     align-items: center;
     gap: 5px;
 }
