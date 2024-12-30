@@ -1929,102 +1929,117 @@ form label.error{
 ====================================================================
   Services Section
 ====================================================================
-<style>
-    #visualization-container {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background: #000;
-    }
-    canvas {
-        display: block;
-    }
-    #brandInfo {
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.85);
-        color: #fff;
-        padding: 30px;
-        border-radius: 15px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-        pointer-events: none;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        min-width: 300px;
-    }
-    .brand-logo {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 15px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    }
-    .brand-name {
-        font-size: 28px;
-        margin-bottom: 15px;
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-        font-weight: bold;
-    }
-    .brand-description {
-        font-size: 18px;
-        margin-bottom: 20px;
-        color: rgba(255, 255, 255, 0.9);
-        line-height: 1.4;
-    }
-    .visit-button {
-        display: inline-block;
-        padding: 12px 30px;
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
-        text-decoration: none;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        transition: all 0.3s;
-        pointer-events: auto;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .visit-button:hover {
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-        transform: translateY(-2px);
-    }
-@media (max-width: 768px) {
-    #visualization-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .brand-logo {
-        width: 60px;
-        height: 60px;
-    }
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+
+***/
+
+.services-section{
+  position: relative;
+  margin-bottom: 60px;
 }
 
-.preloader:before {
-    content: "Loading...";
-    font-size: 1.5rem;
-    color: #007bff;
-}
+.services-section .services{
+  position: relative;
 }
 
-</style>
+.services-section .services .row{
+  margin: 0 -20px;
+}
+
+.service-block{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.services .row .service-block{
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.service-block .inner-box{
+  position: relative;
+  display: block;
+  min-height: 100%;
+  padding: 35px 30px 35px 30px;
+  background: #292c30;
+  border-radius: 20px;
+}
+
+.service-block .inner{
+  position: relative;
+  display: block;
+  min-height: 80px;
+  padding-left: 100px;
+}
+
+.service-block .icon-box{
+  position: absolute;
+  left: -30px;
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  background: #303336;
+  border-radius: 0 20px 20px 0;
+  -webkit-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+.service-block .inner-box:hover .icon-box{
+  background: #d8f744;
+  color: #292c30;
+}
+
+.service-block h5{
+  position: relative;
+  font-size: 18px;
+  font-family: 'Telegraf_UltraBold', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0;
+}
+
+.service-block .text{
+  position: relative;
+  font-size: 15px;
+  font-family: 'Gotham_Book', sans-serif;
+  color: rgba(255, 255, 255, 0.40);
+  margin: 0 0 10px;
+}
+
+.service-block .link-box{
+  position: relative;
+}
+
+.service-block .link-box a{
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #d8f744;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border-radius: 0 10px 0 0;
+  -webkit-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+.service-block .inner-box:hover .link-box a{
+  background: #d8f744;
+  border-color: #d8f744;
+  color: #292c30;
+}
+
+/*** 
 
 ====================================================================
   Plans Section
