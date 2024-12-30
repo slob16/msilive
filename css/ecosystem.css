@@ -138,12 +138,128 @@
     font-style: normal;
 }
 
-/*** 
 body {
-    margin: 0;
-    overflow: hidden;
-    background: #1d1d1d;
-    font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.60em;
+  font-weight: 400;
+  background: #101010;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  cursor: none;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #d8f744;
+}
+
+a:hover, a:focus, a:visited, a:active, button:active, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ul li,
+ol,
+ol li{
+  list-style: none;
+  margin: 0 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  position: relative;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+  margin: 0 0 15px;
+  background: none;
+  color: #ffffff;
+  line-height: 1.33em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+  color: #ffffff;
+}
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 54px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 26px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 14px;
+}
+
+input, button, select, textarea {
+  font-family: 'Cairo', sans-serif;
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+p{
+  position: relative;
+  line-height: 1.60em;
+  margin-bottom: 20px;
+}
+
+.text {
+  position: relative;
+  line-height: 1.60em;
+  margin-bottom: 0px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.auto-container{
+  position: static;
+  max-width: 1240px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.site-container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+.main-content-container{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 130px;
+}
+
+.site-container .body-bg-layer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 canvas {
