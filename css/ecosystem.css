@@ -280,7 +280,7 @@ p{
 }
 
 .site-container .body-bg-layer{
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
