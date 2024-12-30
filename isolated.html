@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Main website CSS -->
+    <link rel="stylesheet" href="main-styles.css">
+    
+    <!-- Isolated CSS for specific container -->
+    <style>
+        /* Use a more specific selector to ensure styles don't leak */
+        #isolatedContainer {
+            /* Reset any inherited styles */
+            all: initial;
+            /* Contain the styles within this element */
+            contain: style layout;
+        }
+        
+        /* Scope all styles under the isolated container */
+        #isolatedContainer * {
+            /* Your isolated styles here */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        /* Example of how to prevent main website styles from affecting this container */
+        #isolatedContainer button {
+            /* Override any global button styles */
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            /* Add your specific styles */
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Regular website content -->
+    <div class="main-content">
+        <h1>Main Website</h1>
+        <p>This uses the main website styles</p>
+    </div>
+
+    <!-- Isolated container -->
+    <div id="isolatedContainer">
+        <h2>Isolated Section</h2>
+        <p>This section has its own styles</p>
+        <button>Isolated Button</button>
+    </div>
+
+    <!-- Main website JavaScript -->
+    <script src="main-scripts.js"></script>
+
+    <!-- Isolated JavaScript using an IIFE to avoid global scope pollution -->
+    <script>
+        (function() {
+            // Create a closure to isolate variables
+            const container = document.getElementById('isolatedContainer');
+            
+            // All JavaScript for the isolated container goes here
+            function isolatedFunction() {
+                // This function is not accessible from outside
+                console.log('Isolated functionality');
+            }
+            
+            // Event listeners for the isolated container
+            container.querySelector('button').addEventListener('click', isolatedFunction);
+            
+            // Prevent access to internal functions from global scope
+            // Only expose what's necessary through a controlled interface
+            window.isolatedInterface = {
+                // Public methods go here
+                publicMethod: function() {
+                    console.log('This can be accessed from outside');
+                }
+            };
+        })();
+    </script>
+</body>
+</html>
