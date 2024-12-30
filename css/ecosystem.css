@@ -80,32 +80,68 @@ canvas {
     height: auto;
 }
 
-.breadcrumb {
-    position: absolute;
-    top: 120px;
-    left: 10px;
-    font-size: 16px;
-    color: #faf9f6;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+***/
+
+.page-title{
+  position: relative;
+  padding: 90px 0;
 }
 
-.breadcrumb a {
-    color: #faf9f6;
-    text-decoration: none;
-    transition: color 0.3s;
+.page-title h1{
+  position: relative;
+  font-family: 'Telegraf_UltraBold', sans-serif;
+  text-transform: none;
+  margin: 0 0;
 }
 
-.breadcrumb a:hover {
-    color: #f0f0f0;
+.page-title .bread-crumb{
+  position: relative;
+  line-height: 24px;
 }
 
-.breadcrumb span {
-    color: #888;
+.page-title .bread-crumb ul li{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 24px;
+  padding: 5px 0;
+  text-transform: none;
+  margin-right: 26px;
+  color: #ffffff;
 }
+
+.page-title .bread-crumb ul li:last-child{
+  margin-right: 0;
+}
+
+.page-title .bread-crumb ul li:after{
+  content: '\f105';
+  position: absolute;
+  right: -26px;
+  top: 6px;
+  width: 22px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #d8f744;
+  font-family: 'Font Awesome 6 Pro';
+}
+
+.page-title .bread-crumb ul li:last-child:after{
+  display: none;
+}
+
+.page-title .bread-crumb ul li a{
+  position: relative;
+  color: #ffffff;
+}
+
+.page-title .bread-crumb ul li a:hover{
+  color: #d8f744;
+  text-decoration: underline;
+}
+
+/*** 
 
 .copyright {
     position: fixed;
