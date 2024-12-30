@@ -21,15 +21,52 @@ brands.forEach((brand, i) => {
     const material = new THREE.SpriteMaterial({ color: brand.color });
     const sprite = new THREE.Sprite(material);
     sprite.position.set(Math.random() * 20 - 10, Math.random() * 20 - 10, Math.random() * 20 - 10);
-    sprite.userData = brand;
+    sprite.userData = brand; // Store brand info in the sprite's userData
     brandGroup.add(sprite);
     nodes.push(sprite);
+});
+
+// Select brand info elements
+const brandLogo = document.querySelector(".brand-logo");
+const brandName = document.querySelector(".brand-name");
+const brandDescription = document.querySelector(".brand-description");
+const visitButton = document.querySelector(".visit-button");
+
+// Function to update the brand info
+function updateBrandInfo(brand) {
+    brandLogo.src = "/api/placeholder/80/80"; // Use a placeholder or actual brand logo
+    brandName.textContent = brand.name;
+    brandDescription.textContent = brand.description;
+    visitButton.href = brand.url;
+}
+
+// Raycasting to detect sprite interaction
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+window.addEventListener('mousemove', (event) => {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 });
 
 // Animation loop
 function animate() {
     requestAnimationFrame(animate);
+
+    // Update the raycaster based on mouse position
+    raycaster.update();
+
+    // Detect intersections between the mouse and brand nodes (sprites)
+    raycaster.update(camera, renderer.domElement);
+    const intersects = raycaster.intersectObjects(brandGroup.children);
+
+    if (intersects.length > 0) {
+        // If the mouse intersects with a brand node, update the brand info
+        const selectedBrand = intersects[0].object.userData;
+        updateBrandInfo(selectedBrand);
+    }
+
     renderer.render(scene, camera);
 }
-animate();
 
+animate();
