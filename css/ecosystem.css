@@ -177,7 +177,7 @@ body {
 a{
   text-decoration: none;
   cursor: pointer;
-  color: #d8f744;
+  color: #e1ec50;
 }
 
 a:hover, a:focus, a:visited, a:active, button:active, button:focus {
@@ -257,7 +257,7 @@ p{
 }
 
 .auto-container{
-  position: static;
+  position: relative;
   max-width: 1240px;
   padding: 0px 20px;
   margin: 0 auto;
