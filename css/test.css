@@ -324,12 +324,12 @@ p{
   margin: 0;
   line-height: 30px;
   padding: 16px 35px 14px;
-  color: #212e45;
+  color: 212e45;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   text-transform: none;
-  background: #212e45;
+  background: none;
   border: 2px solid #e1ec50;
   border-radius: 7px;
   -moz-transition:all 0.3s ease;
