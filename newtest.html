@@ -1,55 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Ecosystem</title>
+    <title>Ecosystem</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-image: url('images/background/body-bg-1.jpg');
-            background-size: cover;
-            background-position: center;
             overflow: hidden;
+            background: none; /* Ensure the body background is transparent */
+            font-family: 'Arial', sans-serif;
         }
-
-        .top-left-logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            height: 50px;
+        canvas {
+            display: block;
         }
-
-        .breadcrumb {
-            position: absolute;
-            top: 20px;
-            left: 50px;
-            color: white;
-            font-size: 16px;
-        }
-
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .breadcrumb .arrow {
-            margin: 0 5px;
-        }
-
-        #container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-        }
-
         #brandInfo {
-            position: absolute;
+            position: fixed;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
@@ -66,7 +32,6 @@
             backdrop-filter: blur(10px);
             min-width: 300px;
         }
-
         .brand-logo {
             width: 80px;
             height: 80px;
@@ -74,21 +39,18 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
-
         .brand-name {
             font-size: 28px;
             margin-bottom: 15px;
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
             font-weight: bold;
         }
-
         .brand-description {
             font-size: 18px;
             margin-bottom: 20px;
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.4;
         }
-
         .visit-button {
             display: inline-block;
             padding: 12px 30px;
@@ -98,11 +60,11 @@
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s;
+            pointer-events: auto;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
             font-size: 18px;
             font-weight: bold;
         }
-
         .visit-button:hover {
             background: rgba(255, 255, 255, 0.2);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
@@ -111,49 +73,27 @@
     </style>
 </head>
 <body>
-    <a href="index.html">
-        <img src="images/logo.png" alt="Media Stacks Logo" class="top-left-logo">
-    </a>
-    <div class="breadcrumb">
-        <a href="/">Home</a>
-        <span class="arrow">&gt;</span>
-        <span>About</span>
-    </div>
-
-    <div id="container"></div>
-
     <div id="brandInfo">
-        <img class="brand-logo" src="" alt="Brand Logo">
+        <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
         <div class="brand-name"></div>
         <div class="brand-description"></div>
         <a href="#" class="visit-button" target="_blank">Visit Website</a>
     </div>
-
     <script>
-        // Scene setup
-        const container = document.getElementById('container');
+        // Scene setup with transparent background
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-        renderer.setSize(container.clientWidth, container.clientHeight);
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setClearColor(0x000000, 0); // Transparent background
-        container.appendChild(renderer.domElement);
-
-        const raycaster = new THREE.Raycaster();
-        const mouse = new THREE.Vector2();
-        const brandInfo = document.getElementById('brandInfo');
-        const brandName = document.querySelector('.brand-name');
-        const brandDescription = document.querySelector('.brand-description');
-        const brandLogo = document.querySelector('.brand-logo');
-        const brandLink = document.querySelector('.visit-button');
+        document.body.appendChild(renderer.domElement);
 
         // Sample brands
         const brands = Array.from({ length: 40 }, (_, i) => ({
             name: `Brand ${i + 1}`,
             description: `Innovative solutions for Brand ${i + 1}.`,
             url: `https://brand${i + 1}.com`,
-            color: new THREE.Color().setHSL(i / 40, 1, 0.6),
-            logo: '/api/placeholder/80/80' // Placeholder for logo image
+            color: new THREE.Color().setHSL(i / 40, 1, 0.6)
         }));
 
         const brandGroup = new THREE.Group();
@@ -180,30 +120,6 @@
 
         camera.position.z = 30;
 
-        // Handle mouse movements
-        container.addEventListener('mousemove', (event) => {
-            const rect = container.getBoundingClientRect();
-            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObjects(brandGroup.children);
-
-            if (intersects.length > 0) {
-                const brand = intersects[0].object.userData;
-                brandInfo.style.opacity = 1;
-                brandInfo.style.pointerEvents = 'auto';
-
-                brandName.textContent = brand.name;
-                brandDescription.textContent = brand.description;
-                brandLogo.src = brand.logo;
-                brandLink.href = brand.url;
-            } else {
-                brandInfo.style.opacity = 0;
-                brandInfo.style.pointerEvents = 'none';
-            }
-        });
-
         // Animation loop
         function animate() {
             requestAnimationFrame(animate);
@@ -211,13 +127,14 @@
             renderer.render(scene, camera);
         }
 
-        window.addEventListener('resize', () => {
-            camera.aspect = container.clientWidth / container.clientHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(container.clientWidth, container.clientHeight);
-        });
-
         animate();
+
+        // Resize handling
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
     </script>
 </body>
 </html>
