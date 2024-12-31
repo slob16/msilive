@@ -6,7 +6,6 @@
   font-family: 'Montserrat', sans-serif;
 */
 
-
 @import url('font-awesome.css');
 @import url('simple-line-icons.css');
 @import url('animate.css');
@@ -14,7 +13,6 @@
 @import url('smooth-scrollbar.css');
 @import url('scrollbar.css');
 @import url('jquery.fancybox.min.css');
-
 
 @font-face {
     font-family: 'Gotham_Book';
@@ -138,21 +136,19 @@
 }
 
 /*** 
-
 ====================================================================
 
   Global Settings
 
 ====================================================================
-
 ***/
 /* === 1. VARIABLES & GLOBAL SETTINGS === */
 :root {
     /* Colors */
-    --primary-color: #your-color;
-    --secondary-color: #your-color;
-    --text-color: #your-color;
-    --background-color: #your-color;
+    --primary-color: #e1ec50;
+    --secondary-color: #212e45;
+    --text-color: #faf9f6;
+    --background-color: #495061;
     
     /* Typography */
     --font-primary: 'Cairo', sans-serif;
@@ -178,167 +174,7 @@
 }
 
 body {
-    font-family: var(--font-primary);
-    overflow-x: hidden;
-}
-
-/* === 3. PRELOADER === */
-.preloader {
-    /* Preloader styles */
-}
-
-/* === 4. CURSOR === */
-.cursor {
-    /* Custom cursor styles */
-}
-
-/* === 5. HEADER STYLES === */
-.main-header-bar {
-    /* Main header container */
-}
-
-.line-one, .line-two {
-    /* Header lines */
-}
-
-.header-bar-inner {
-    /* Inner header content */
-}
-
-/* === 6. NAVIGATION === */
-/* Nav Toggler */
-.nav-toggler {
-    /* Navigation toggle button */
-}
-
-.bar {
-    /* Hamburger bars */
-}
-
-/* Main Navigation */
-.main-nav-outer {
-    /* Outer navigation container */
-}
-
-.main-nav {
-    /* Main navigation styles */
-}
-
-.navigation {
-    /* Navigation list */
-}
-
-/* === 7. LOGO === */
-.alt-logo-box, .main-logo-box {
-    /* Logo containers */
-}
-
-/* === 8. SOCIAL LINKS === */
-.social-links {
-    /* Social media links container */
-}
-
-/* === 9. 3D CONTAINER STYLES === */
-#special-Container {
-    /* Isolated styles for 3D container */
-}
-
-#special-Canvas {
-    /* Canvas specific styles */
-}
-
-/* === 10. UI OVERLAY === */
-#uiOverlay {
-    /* UI overlay styles */
-}
-
-/* === 11. BRAND INFO PANEL === */
-#brandInfo {
-    /* Brand info panel styles */
-}
-
-.brand-logo {
-    /* Brand logo styles */
-}
-
-.brand-name {
-    /* Brand name styles */
-}
-
-.brand-description {
-    /* Brand description styles */
-}
-
-.visit-button {
-    /* Visit button styles */
-}
-
-/* === 12. FOOTER === */
-.main-footer {
-    /* Footer styles */
-}
-
-.footer-inner {
-    /* Inner footer content */
-}
-
-.footer-logo {
-    /* Footer logo styles */
-}
-
-/* === 13. SCROLL TO TOP === */
-.scroll-top {
-    /* Scroll to top button */
-}
-
-/* === 14. UTILITY CLASSES === */
-.clearfix {
-    /* Clearfix utility */
-}
-
-.auto-container {
-    /* Container utility */
-}
-
-/* === 15. ANIMATIONS === */
-@keyframes fadeIn {
-    /* Fade in animation */
-}
-
-/* === 16. RESPONSIVE STYLES === */
-/* Mobile Devices */
-@media (max-width: 767px) {
-    /* Mobile styles */
-}
-
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Tablet styles */
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    /* Desktop styles */
-}
-
-/* === 17. VENDOR OVERRIDES === */
-/* Bootstrap overrides */
-.container {
-    /* Custom container styles */
-}
-
-/* Fancybox overrides */
-.fancybox-content {
-    /* Custom fancybox styles */
-}
-
-/* === 18. CUSTOM TRANSITIONS === */
-[data-transition] {
-    /* Custom transition styles */
-}
-
- /*** old ***/
-body {
+  overflow-x: hidden;
   font-family: 'Cairo', sans-serif;
   font-size: 16px;
   color: #faf9f6;
@@ -466,193 +302,9 @@ p{
   background-size: cover;
 }
 
-.fit-banner .main-content-container{
-  padding-left: 0;
-}
-
-.scroll-container{
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.theme-btn {
-  display: inline-block;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.centered {
-  text-align: center;
-}
-
-.btn-style-one{
-  position:relative;
-  display:inline-block;
-  vertical-align: top;
-  font-family: 'Khula', sans-serif;
-  margin: 0;
-  line-height: 30px;
-  padding: 16px 35px 14px;
-  color: #000000;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  text-transform: none;
-  background: #d8f744;
-  border: 2px solid #d8f744;
-  border-radius: 7px;
-  -moz-transition:all 0.3s ease;
-  -webkit-transition:all 0.3s ease;
-  -ms-transition:all 0.3s ease;
-  -o-transition:all 0.3s ease;
-  transition:all 0.3s ease;
-}
-
-.btn-style-one span{
-  position: relative;
-  display: block;
-  z-index: 1;
-}
-
-.btn-style-one i{
-  position: relative;
-  display: inline-block;
-  top: -7px;
-  font-size: 20px;
-  vertical-align: middle;
-  padding-left: 20px;
-  line-height: 30px;
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -moz-transition:all 0.3s ease;
-  -webkit-transition:all 0.3s ease;
-  -ms-transition:all 0.3s ease;
-  -o-transition:all 0.3s ease;
-  transition:all 0.3s ease;
-  z-index: 1;
-}
-
-.btn-style-one:hover i{
-  top: 0;
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.btn-style-one:hover{
-  color: #d8f744;
-  background: none;
-  border-color: #d8f744;
-}
-
-.btn-style-two{
-  position:relative;
-  display:inline-block;
-  vertical-align: top;
-  font-family: 'Telegraf_UltraBold', sans-serif;
-  margin: 0;
-  line-height: 26px;
-  padding: 16px 30px 14px;
-  color: #000000;
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: #d8f744;
-  border: 2px solid #d8f744;
-  border-radius: 0px;
-  -moz-transition:all 0.3s ease;
-  -webkit-transition:all 0.3s ease;
-  -ms-transition:all 0.3s ease;
-  -o-transition:all 0.3s ease;
-  transition:all 0.3s ease;
-}
-
-.btn-style-two span{
-  position: relative;
-  display: block;
-  z-index: 1;
-}
-
-.btn-style-two i{
-  position: relative;
-  display: inline-block;
-  top: -7px;
-  font-size: 20px;
-  vertical-align: middle;
-  padding-left: 20px;
-  line-height: 30px;
-  transform: rotate(45deg);
-  z-index: 1;
-}
-
-.btn-style-two:hover{
-  color: #d8f744;
-  background: none;
-  border-color: #d8f744;
-}
-
-
-.theme-btn .icon-left {
-  padding-right: 10px;
-}
-
-.theme-btn .icon-right {
-  padding-left: 10px;
-}
-
-.theme_color {
-  color: #d8f744;
-}
-
-.light-font {
-  font-weight: 300;
-}
-
-.regular-font {
-  font-weight: 400;
-}
-
-.semibold-font {
-  font-weight: 600;
-}
-
-.bold-font {
-  font-weight: 700;
-}
-
-.ex-bold-font {
-  font-weight: 800;
-}
-
-.heavy-font {
-  font-weight: 900;
-}
-
-.bg-lightgrey {
-  background-color: #f6f7f8;
-}
-
-.no-bg {
-  background: none;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.grey-color {
-  color: #333333 !important;
-}
-
+/* === 3. PRELOADER === */
 .preloader {
-  position: fixed;
+   position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -670,450 +322,7 @@ img {
   height: auto;
 }
 
-/*** 
-
-====================================================================
-
-  Scroll To Top style
-
-====================================================================
-
-***/
-
-.scroll-to-top{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 44px;
-  height: 52px;
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 52px;
-  text-align: center;
-  z-index: 100;
-  cursor: pointer;
-  border-radius: 15px 15px 0 0;
-  background: #d8f744;
-  display: none;
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.scroll-to-top img{
-  position: relative;
-  top: -2px;
-  vertical-align: middle;
-  height: 10px;
-}
-
-.scroll-to-top:hover {
-  color: #ffffff;
-  background: #d8f744;
-}
-
-/*** 
-
-====================================================================
-  Default Form Style
-====================================================================
-
-***/
-
-form{
-  position:relative;
-}
-
-/* Default Form Style */
-
-.default-form{
-  position: relative;
-}
-
-form .form-group{
-  position:relative;
-  margin-bottom: 30px;
-}
-
-form .row{
-  margin: 0 -15px;
-}
-
-form .row .form-group{
-  position:relative;
-  padding: 0 15px;
-  margin-bottom: 32px;
-}
-
-form .field-inner{
-  position: relative;
-  display: block;
-}
-
-form .field-inner .dot{
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  width: 15px;
-  border-bottom: 6px solid rgba(255, 255, 255, 0.30);
-}
-
-form .field-inner input:focus + .dot,
-form .field-inner select:focus + .dot,
-form .field-inner textarea:focus + .dot{
-  left: auto;
-  right: 0;
-  border-color: #ffffff;
-}
-
-form .field-inner .alt-icon{
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  margin-top: -15px;
-  line-height: 30px;
-  font-size: 16px;
-  color: #d8f744;
-  z-index: 1;
-  pointer-events: none;
-}
-
-form .form-group .field-label{
-  position:relative;
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  font-family: 'Telegraf_Regular', sans-serif;
-  text-transform: none;
-  margin-bottom: 0px;
-}
-
-form .form-group .field-label .icon{
-  position: relative;
-  top: -1px;
-  display: inline-block;
-  vertical-align: top;
-  color: rgba(255, 255, 255, 0.30);
-  line-height: 20px;
-  padding-right: 10px;
-}
-
-form .form-group .e-label{
-  position: relative;
-}
-
-form .form-group input[type="text"],
-form .form-group input[type="email"],
-form .form-group input[type="password"],
-form .form-group input[type="tel"],
-form .form-group input[type="url"],
-form .form-group input[type="file"],
-form .form-group input[type="number"],
-form .form-group textarea,
-form .form-group select{
-    position: relative;
-    display: block;
-    height: 30px;
-    width: 100%;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    font-family: 'Telegraf_Regular', sans-serif;
-    font-weight: 500;
-    padding: 5px 0px 5px 0;
-    background: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius:0px;
-    -webkit-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-form .form-group textarea{
-  height: 100px;
-  resize: none;
-}
-
-form .form-group select{
-  -webkit-appearance:none;
-  -ms-appearance:none;
-  -moz-appearance:none;
-  -o-appearance:none;
-  appearance:none;
-  background: url(../images/icons/icon-select.png) right center no-repeat;
-  cursor:pointer;
-}
-
-form .form-group select option{
-  line-height: 20px;
-  padding-left:0px;
-  text-indent: 0px;
-  cursor:pointer; 
-}
-
-form .form-group input[type="submit"],
-form .form-group button{
-  display:inline-block;
-}
-
-form .form-group input[type="text"]:focus,
-form .form-group input[type="email"]:focus,
-form .form-group input[type="password"]:focus,
-form .form-group input[type="tel"]:focus,
-form .form-group input[type="url"]:focus,
-form .form-group input[type="file"]:focus,
-form .form-group input[type="number"]:focus,
-form .form-group textarea:focus,
-form .form-group select:focus,
-.form-group .ui-selectmenu-button.ui-button:focus,
-.form-group .ui-selectmenu-button.ui-button:active{
-  border-color: #ffffff;
-}
-
-form ::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.50);}
-
-form ::-moz-input-placeholder{color: rgba(255, 255, 255, 0.50);}
-
-form ::-ms-input-placeholder{color: rgba(255, 255, 255, 0.50);}
-
-form label.error{
-  color: #ff0000;
-  font-size:14px;
-  text-transform: capitalize;
-  text-align:left;
-  display:block;
-  padding-top:7px;
-  line-height: 24px;
-}
-
-.check-block{
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.check-block input{
-  position: absolute;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.check-block label{
-  position: relative;
-  display: block;
-  line-height: 28px;
-  padding-left: 34px;
-  font-weight: 400;
-  color: #505050;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0;
-}
-
-.check-block label:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 1px;
-  width: 24px;
-  height: 24px;
-  line-height: 22px;
-  background: #ffffff;
-  border: 1px solid #d8f744;
-  border-radius: 50%;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.check-block input:checked + label:before{
-  content: '';
-  background: #d8f744;
-  color: #ffffff;
-}
-
-.check-block input:checked + label:after{
-  content: '\f00c';
-  font-family: "Font Awesome 6 Pro";
-  position: absolute;
-  left: 0;
-  top: 3px;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  text-align: center;
-  font-size: 12px;
-  color: #ffffff;
-  line-height: 22px;
-}
-
-.radio-block{
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.radio-block input{
-  position: absolute;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.radio-block label{
-  position: relative;
-  display: block;
-  line-height: 28px;
-  padding-left: 30px;
-  font-weight: 400;
-  color: #505050;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0;
-}
-
-.radio-block label:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border: 1px solid #d8f744;
-  border-radius: 50%;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.radio-block label:after{
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  background: #d8f744;
-  border-radius: 50%;
-  opacity: 0;
-  z-index: 1;
-}
-
-.radio-block input:checked + label:after{
-  opacity: 1;
-}
-
-/*Custom Select*/
-
-.form-group .ui-selectmenu-button.ui-button{
-  width:100%;
-  font-size:16px;
-  font-weight: 500;
-  height:54px;
-  padding:11px 20px;
-  line-height:30px;
-  font-family: 'Cairo', sans-serif;
-  color:#585f5f;
-  border-radius:0px;
-  background-color:#ffffff;
-  border: 1px solid #e0e0e0;
-}
-
-.form-group .ui-button .ui-icon{
-  background:none;
-  position:relative;
-  top:6px;
-  right: 0px;
-  text-indent:0px;
-  color:#999999;
-}
-
-.form-group .ui-button .ui-icon:before{
-  font-family: 'simple-line-icons';
-  content: "\e604";
-  position:absolute;
-  right:0px;
-  top:0px !important;
-  width:15px;
-  height:30px;
-  display:block;
-  color:#d8f744;
-  line-height:20px;
-  font-size:14px;
-  font-weight:700;
-  text-align:center;
-  z-index:5;
-}
-
-.ui-selectmenu-menu{
-  min-width: 150px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.ui-widget.ui-widget-content{
-  border:1px solid #d8f744;
-  border-top: none;
-  font-family: 'Cairo', sans-serif;
-  border-radius: 0;
-  padding: 0;
-}
-
-.ui-menu .ui-menu-item{
-  font-size:16px;
-  border-bottom:1px solid #d8f744;
-}
-
-.ui-menu .ui-menu-item:last-child{
-  border:none;
-}
-
-.ui-menu .ui-menu-item-wrapper{
-  position:relative;
-  display:block;
-  padding:10px 18px !important;
-  font-size:16px;
-  line-height:28px;
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.ui-menu .ui-menu-item-wrapper:hover,
-.ui-menu .ui-menu-item-wrapper.ui-state-active,
-.ui-state-active, .ui-widget-content .ui-state-active{
-  background: #252525;
-  font-weight: 400;
-  border: none;
-  border-bottom:1px solid #d8f744;
-  margin: 0;
-}
-
-/*** 
-
-====================================================================
-
-  Main Header style
-
-====================================================================
-
-***/
+/* === 5. HEADER STYLES === */
 
 .main-header-bar{
   position:fixed;
@@ -1612,6 +821,314 @@ form label.error{
 .main-nav-outer .main-nav-box .main-nav .navigation > li > ul > li:hover > a,
 .main-nav-outer .main-nav-box .main-nav .navigation > li > ul > li.current > a{
   color:#d8f744;  
+}
+
+/* === 9. 3D CONTAINER STYLES === */
+#special-Container {
+    /* Isolated styles for 3D container */
+}
+
+#special-Canvas {
+    /* Canvas specific styles */
+}
+
+/* === 10. UI OVERLAY === */
+#uiOverlay {
+    /* UI overlay styles */
+}
+
+/* === 11. BRAND INFO PANEL === */
+#brandInfo {
+    /* Brand info panel styles */
+}
+
+.brand-logo {
+    /* Brand logo styles */
+}
+
+.brand-name {
+    /* Brand name styles */
+}
+
+.brand-description {
+    /* Brand description styles */
+}
+
+.visit-button {
+    /* Visit button styles */
+}
+
+/* === 13. SCROLL TO TOP === */
+.scroll-top {
+
+  .scroll-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 52px;
+  color: #faf9f6;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 52px;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 15px 15px 0 0;
+  background: #495061;
+  display: none;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.scroll-to-top img{
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  height: 10px;
+}
+
+.scroll-to-top:hover {
+  color: #faf9f6;
+  background: #e1ec50;
+}
+    /* Scroll to top button */
+}
+
+/* === 14. UTILITY CLASSES === */
+.clearfix {
+    /* Clearfix utility */
+}
+
+.auto-container {
+    /* Container utility */
+}
+
+/* === 15. ANIMATIONS === */
+@keyframes fadeIn {
+    /* Fade in animation */
+}
+
+/* === 16. RESPONSIVE STYLES === */
+/* Mobile Devices */
+@media (max-width: 767px) {
+    /* Mobile styles */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet styles */
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* Desktop styles */
+}
+
+/* === 17. VENDOR OVERRIDES === */
+/* Bootstrap overrides */
+.container {
+    /* Custom container styles */
+}
+
+/* Fancybox overrides */
+.fancybox-content {
+    /* Custom fancybox styles */
+}
+
+/* === 18. CUSTOM TRANSITIONS === */
+[data-transition] {
+    /* Custom transition styles */
+}
+
+ /*** old ***/
+
+.fit-banner .main-content-container{
+  padding-left: 0;
+}
+
+.scroll-container{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-btn {
+  display: inline-block;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.centered {
+  text-align: center;
+}
+
+.btn-style-one{
+  position:relative;
+  display:inline-block;
+  vertical-align: top;
+  font-family: 'Khula', sans-serif;
+  margin: 0;
+  line-height: 30px;
+  padding: 16px 35px 14px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-transform: none;
+  background: #d8f744;
+  border: 2px solid #d8f744;
+  border-radius: 7px;
+  -moz-transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.btn-style-one span{
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.btn-style-one i{
+  position: relative;
+  display: inline-block;
+  top: -7px;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-left: 20px;
+  line-height: 30px;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  z-index: 1;
+}
+
+.btn-style-one:hover i{
+  top: 0;
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.btn-style-one:hover{
+  color: #d8f744;
+  background: none;
+  border-color: #d8f744;
+}
+
+.btn-style-two{
+  position:relative;
+  display:inline-block;
+  vertical-align: top;
+  font-family: 'Telegraf_UltraBold', sans-serif;
+  margin: 0;
+  line-height: 26px;
+  padding: 16px 30px 14px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #d8f744;
+  border: 2px solid #d8f744;
+  border-radius: 0px;
+  -moz-transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.btn-style-two span{
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.btn-style-two i{
+  position: relative;
+  display: inline-block;
+  top: -7px;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-left: 20px;
+  line-height: 30px;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.btn-style-two:hover{
+  color: #d8f744;
+  background: none;
+  border-color: #d8f744;
+}
+
+
+.theme-btn .icon-left {
+  padding-right: 10px;
+}
+
+.theme-btn .icon-right {
+  padding-left: 10px;
+}
+
+.theme_color {
+  color: #d8f744;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.regular-font {
+  font-weight: 400;
+}
+
+.semibold-font {
+  font-weight: 600;
+}
+
+.bold-font {
+  font-weight: 700;
+}
+
+.ex-bold-font {
+  font-weight: 800;
+}
+
+.heavy-font {
+  font-weight: 900;
+}
+
+.bg-lightgrey {
+  background-color: #f6f7f8;
+}
+
+.no-bg {
+  background: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.grey-color {
+  color: #333333 !important;
 }
 
 
