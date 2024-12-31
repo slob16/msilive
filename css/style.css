@@ -1101,6 +1101,7 @@ form label.error{
     transform-origin: left top;
     transform: rotate(-90deg);
     white-space: nowrap;  /* Prevent wrapping */
+    font-size: 12px;
 }
 }
 
