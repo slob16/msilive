@@ -1100,7 +1100,6 @@ form label.error{
     width: 160px;
     transform-origin: left top;
     transform: rotate(-90deg);
-    white-space: nowrap;
 }
 
 .main-header-bar .alt-logo-box{
