@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Our Ecosystem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Ecosystem</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
     <script src="https://kit.fontawesome.com/a7a023d9b8.js" crossorigin="anonymous"></script>
-   
-</head>
-<body style="background-image: url(images/background/body-bg-1.jpg); background-size: cover; background-position: center;">
-    <!-- Media Stacks Logo -->
-  <div>  <a href="index.html">
-    <img src="images/logo.png" alt="Media Stacks Logo" class="top-left-logo">
-</a>
-<div>
-    <!-- Breadcrumb Navigation -->
-    <div class="breadcrumb">
-        <a href="/">Home</a>
-        <span class="arrow">&gt;</span>
-        <span>About</span>
-    </div>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ecosystem</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
             font-family: 'Arial', sans-serif;
+            background-image: url('images/background/body-bg-1.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
         }
-        canvas {
-            display: block;
+
+        .top-left-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px;
         }
+
+        .breadcrumb {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .breadcrumb .arrow {
+            margin: 0 5px;
+        }
+
         #container {
-            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100vh; /* Adjust height as needed */
-            background: transparent;
+            height: 100vh;
+            pointer-events: none; /* Prevent interaction */
         }
+
         #brandInfo {
             position: absolute;
             bottom: 30px;
@@ -59,6 +68,7 @@
             backdrop-filter: blur(10px);
             min-width: 300px;
         }
+
         .brand-logo {
             width: 80px;
             height: 80px;
@@ -66,18 +76,21 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
+
         .brand-name {
             font-size: 28px;
             margin-bottom: 15px;
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
             font-weight: bold;
         }
+
         .brand-description {
             font-size: 18px;
             margin-bottom: 20px;
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.4;
         }
+
         .visit-button {
             display: inline-block;
             padding: 12px 30px;
@@ -87,11 +100,11 @@
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s;
-            pointer-events: auto;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
             font-size: 18px;
             font-weight: bold;
         }
+
         .visit-button:hover {
             background: rgba(255, 255, 255, 0.2);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
@@ -100,60 +113,61 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="brandInfo">
-            <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
-            <div class="brand-name"></div>
-            <div class="brand-description"></div>
-            <a href="#" class="visit-button" target="_blank">Visit Website</a>
-        </div>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Media Stacks Logo" class="top-left-logo">
+    </a>
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="arrow">&gt;</span>
+        <span>About</span>
     </div>
+
+    <div id="container"></div>
+
+    <div id="brandInfo">
+        <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
+        <div class="brand-name"></div>
+        <div class="brand-description"></div>
+        <a href="#" class="visit-button" target="_blank">Visit Website</a>
+    </div>
+
     <script>
-        // Scene setup with enhanced lighting
+        // Scene setup
         const container = document.getElementById('container');
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
         renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setClearColor(0x000000, 0); // Set alpha to 0 for transparency
+        renderer.setClearColor(0x000000, 0); // Transparent background
         container.appendChild(renderer.domElement);
 
-        // Generate 40 sample brands
+        // Generate sample brands
         const brands = Array.from({ length: 40 }, (_, i) => ({
             name: `Brand ${i + 1}`,
-            description: `Innovative solutions for the modern business landscape. Leading the industry in Brand ${i + 1}'s specialized sector.`,
-            shortDesc: `Innovation leader in sector ${i + 1}`,
+            description: `Innovative solutions for Brand ${i + 1}.`,
             url: `https://brand${i + 1}.com`,
             color: new THREE.Color().setHSL(i / 40, 1, 0.6)
         }));
 
-        // Create brand nodes
-        const nodes = [];
         const brandGroup = new THREE.Group();
         scene.add(brandGroup);
 
+        // Arrange brands in a Fibonacci sphere
         const phi = Math.PI * (3 - Math.sqrt(5));
         brands.forEach((brand, i) => {
             const y = 1 - (i / (brands.length - 1)) * 2;
             const radius = Math.sqrt(1 - y * y);
             const theta = phi * i;
 
-            const x = Math.cos(theta) * radius;
-            const z = Math.sin(theta) * radius;
+            const x = Math.cos(theta) * radius * 12;
+            const z = Math.sin(theta) * radius * 12;
 
-            const map = new THREE.TextureLoader().load('/api/placeholder/128/128');
-            const material = new THREE.SpriteMaterial({
-                map: map,
-                color: brand.color,
-                transparent: true,
-                blending: THREE.AdditiveBlending
-            });
-
+            const material = new THREE.SpriteMaterial({ color: brand.color });
             const sprite = new THREE.Sprite(material);
-            sprite.position.set(x * 12, y * 12, z * 12);
+            sprite.position.set(x, y * 12, z);
             sprite.scale.set(1.5, 1.5, 1.5);
             sprite.userData = brand;
-            nodes.push(sprite);
+
             brandGroup.add(sprite);
         });
 
@@ -162,8 +176,7 @@
         // Animation loop
         function animate() {
             requestAnimationFrame(animate);
-            brandGroup.rotation.y += 0.0005;
-            TWEEN.update();
+            brandGroup.rotation.y += 0.001;
             renderer.render(scene, camera);
         }
 
