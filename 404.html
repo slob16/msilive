@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Scene Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #ff5555;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+            line-height: 1.5;
+        }
+        .film-reel {
+            font-size: 10rem;
+            margin: 20px 0;
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            text-decoration: none;
+            color: #00ffcc;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <div class="film-reel">🎥</div>
+        <p>
+            Oops! The scene you’re looking for didn’t make the final cut.<br>
+            Maybe it’s hidden in the director’s cut, or it’s stuck in post-production!
+        </p>
+        <a href="/">Go Back to the Homepage</a>
+    </div>
+</body>
+</html>
 
