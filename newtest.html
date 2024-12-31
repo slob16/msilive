@@ -6,7 +6,6 @@
     <title>Our Ecosystem</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
-    <script src="https://kit.fontawesome.com/a7a023d9b8.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -26,14 +25,14 @@
 
         .breadcrumb {
             position: absolute;
-            top: 50px;
-            left: 10px;
-            color: #faf9f6;
+            top: 20px;
+            left: 50px;
+            color: white;
             font-size: 16px;
         }
 
         .breadcrumb a {
-            color: #faf9f6;
+            color: #fff;
             text-decoration: none;
         }
 
@@ -47,7 +46,6 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            pointer-events: none; /* Prevent interaction */
         }
 
         #brandInfo {
@@ -95,7 +93,7 @@
             display: inline-block;
             padding: 12px 30px;
             background: rgba(255, 255, 255, 0.1);
-            color: #faf9f6f;
+            color: #fff;
             text-decoration: none;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -119,13 +117,13 @@
     <div class="breadcrumb">
         <a href="/">Home</a>
         <span class="arrow">&gt;</span>
-        <span>Ecosystem</span>
+        <span>About</span>
     </div>
 
     <div id="container"></div>
 
     <div id="brandInfo">
-        <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
+        <img class="brand-logo" src="" alt="Brand Logo">
         <div class="brand-name"></div>
         <div class="brand-description"></div>
         <a href="#" class="visit-button" target="_blank">Visit Website</a>
@@ -141,132 +139,82 @@
         renderer.setClearColor(0x000000, 0); // Transparent background
         container.appendChild(renderer.domElement);
 
-                  const glowGeometry = new THREE.SphereGeometry(0.5, 32, 32);
-            const glowMaterial = new THREE.MeshBasicMaterial({
-                color: brand.color,
-                transparent: true,
-                opacity: 0.3,
-                blending: THREE.AdditiveBlending
-            });
-            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
-            glow.position.copy(sprite.position);
-            brandGroup.add(glow);
-        });
-
-        // Enhanced connections with brighter lines
-        const connectionGroup = new THREE.Group();
-        brandGroup.add(connectionGroup);
-
-        function createConnections(activeNode) {
-            connectionGroup.clear();
-            nodes.forEach(node => {
-                if (node !== activeNode) {
-                    const distance = node.position.distanceTo(activeNode.position);
-                    if (distance < 18) { // Increased connection distance
-                        const geometry = new THREE.BufferGeometry().setFromPoints([
-                            activeNode.position,
-                            node.position
-                        ]);
-                        const material = new THREE.LineBasicMaterial({
-                            color: activeNode.userData.color,
-                            transparent: true,
-                            opacity: 0.5, // Increased opacity
-                            blending: THREE.AdditiveBlending,
-                            linewidth: 2 // Thicker lines
-                        });
-                        const line = new THREE.Line(geometry, material);
-                        connectionGroup.add(line);
-                    }
-                }
-            });
-        }
-
-        // Updated camera position
-        camera.position.z = 30;
-
-        // Raycaster for interaction
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
-        let hoveredSprite = null;
+        const brandInfo = document.getElementById('brandInfo');
+        const brandName = document.querySelector('.brand-name');
+        const brandDescription = document.querySelector('.brand-description');
+        const brandLogo = document.querySelector('.brand-logo');
+        const brandLink = document.querySelector('.visit-button');
 
-        // Enhanced mouse move handler
-        function onMouseMove(event) {
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        // Sample brands
+        const brands = Array.from({ length: 40 }, (_, i) => ({
+            name: `Brand ${i + 1}`,
+            description: `Innovative solutions for Brand ${i + 1}.`,
+            url: `https://brand${i + 1}.com`,
+            color: new THREE.Color().setHSL(i / 40, 1, 0.6),
+            logo: '/api/placeholder/80/80' // Placeholder for logo image
+        }));
+
+        const brandGroup = new THREE.Group();
+        scene.add(brandGroup);
+
+        // Create nodes
+        const phi = Math.PI * (3 - Math.sqrt(5));
+        brands.forEach((brand, i) => {
+            const y = 1 - (i / (brands.length - 1)) * 2;
+            const radius = Math.sqrt(1 - y * y);
+            const theta = phi * i;
+
+            const x = Math.cos(theta) * radius * 12;
+            const z = Math.sin(theta) * radius * 12;
+
+            const material = new THREE.SpriteMaterial({ color: brand.color });
+            const sprite = new THREE.Sprite(material);
+            sprite.position.set(x, y * 12, z);
+            sprite.scale.set(1.5, 1.5, 1.5);
+            sprite.userData = brand;
+
+            brandGroup.add(sprite);
+        });
+
+        camera.position.z = 30;
+
+        // Handle mouse movements
+        container.addEventListener('mousemove', (event) => {
+            const rect = container.getBoundingClientRect();
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
             raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObjects(nodes);
-            
+            const intersects = raycaster.intersectObjects(brandGroup.children);
+
             if (intersects.length > 0) {
-                const sprite = intersects[0].object;
-                if (hoveredSprite !== sprite) {
-                    // Reset previous sprite
-                    if (hoveredSprite) {
-                        new TWEEN.Tween(hoveredSprite.scale)
-                            .to({ x: 1.5, y: 1.5 }, 300)
-                            .easing(TWEEN.Easing.Quadratic.Out)
-                            .start();
-                    }
+                const brand = intersects[0].object.userData;
+                brandInfo.style.opacity = 1;
+                brandInfo.style.pointerEvents = 'auto';
 
-                    // Animate new sprite
-                    hoveredSprite = sprite;
-                    new TWEEN.Tween(sprite.scale)
-                        .to({ x: 2.5, y: 2.5 }, 300)
-                        .easing(TWEEN.Easing.Quadratic.Out)
-                        .start();
-
-                    createConnections(sprite);
-
-                    // Update info panel
-                    const brandInfo = document.getElementById('brandInfo');
-                    brandInfo.querySelector('.brand-name').textContent = sprite.userData.name;
-                    brandInfo.querySelector('.brand-description').textContent = sprite.userData.description;
-                    brandInfo.querySelector('.visit-button').href = sprite.userData.url;
-                    brandInfo.style.opacity = '1';
-
-                    // Animate brand info color
-                    const color = sprite.userData.color;
-                    brandInfo.style.borderColor = `rgba(${color.r * 255}, ${color.g * 255}, ${color.b * 255}, 0.4)`;
-                    brandInfo.style.boxShadow = `0 0 40px rgba(${color.r * 255}, ${color.g * 255}, ${color.b * 255}, 0.3)`;
-                }
-            } else if (hoveredSprite) {
-                // Reset sprite and hide info
-                new TWEEN.Tween(hoveredSprite.scale)
-                    .to({ x: 1.5, y: 1.5 }, 300)
-                    .easing(TWEEN.Easing.Quadratic.Out)
-                    .start();
-                hoveredSprite = null;
-                connectionGroup.clear();
-                document.getElementById('brandInfo').style.opacity = '0';
+                brandName.textContent = brand.name;
+                brandDescription.textContent = brand.description;
+                brandLogo.src = brand.logo;
+                brandLink.href = brand.url;
+            } else {
+                brandInfo.style.opacity = 0;
+                brandInfo.style.pointerEvents = 'none';
             }
-        }
+        });
 
-        // Enhanced animation loop with brighter colors
-        let time = 0;
+        // Animation loop
         function animate() {
             requestAnimationFrame(animate);
-            time += 0.001;
-
-            // Smoother rotation
-            brandGroup.rotation.y += 0.0005;
-            brandGroup.rotation.x = Math.sin(time * 0.3) * 0.1;
-
-            // Enhanced color animation
-            nodes.forEach((node, i) => {
-                const hue = (time + i / nodes.length) % 1;
-                node.material.color.setHSL(hue, 1, 0.6);
-            });
-
-            TWEEN.update();
+            brandGroup.rotation.y += 0.001;
             renderer.render(scene, camera);
         }
 
-        // Event listeners
-        window.addEventListener('mousemove', onMouseMove, false);
         window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.aspect = container.clientWidth / container.clientHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setSize(container.clientWidth, container.clientHeight);
         });
 
         animate();
