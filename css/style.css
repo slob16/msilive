@@ -1093,15 +1093,14 @@ form label.error{
    margin-bottom:0px;
 }
 
-.main-header-bar .copyright {
+.main-header-bar .copyright{
     position: absolute;
     left: 50px;
     bottom: 0px;
-    width: 160px;  /* Increase the width to ensure space for the rotated text */
+    width: 160px;
     transform-origin: left top;
     transform: rotate(-90deg);
-    font-size: 14px;
-}
+    white-space: nowrap;
 }
 
 .main-header-bar .alt-logo-box{
