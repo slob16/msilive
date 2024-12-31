@@ -20,90 +20,105 @@
         <span>About</span>
     </div>
 
-    <div id="special-container">
-         <style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ecosystem</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <style>
         body {
             margin: 0;
             overflow: hidden;
-            background: #495061;
             font-family: 'Arial', sans-serif;
         }
         canvas {
             display: block;
         }
-        /* Media Stacks Logo */
-        .top-left-logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 150px; /* Adjust the size of the logo */
-            height: auto;
-        }
-        /* Breadcrumb Style */
-        .breadcrumb {
+        #container {
             position: relative;
-            top: 120px; /* Adjust this to sit under the logo */
-            left: 10px;
-            font-size: 16px;
-            color: #faf9f6;
-            font-family: 'Cairo', sans-serif;
+            width: 100%;
+            height: 100vh; /* Adjust height as needed */
+            background: transparent;
+        }
+        #brandInfo {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            min-width: 300px;
+        }
+        .brand-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        .brand-name {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
         }
-        .breadcrumb a {
-            color: #faf9f6;
-            text-decoration: none;
-            transition: color 0.3s;
+        .brand-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.4;
         }
-        .breadcrumb a:hover {
-            color: #e1ec50;
-        }
-        .breadcrumb span {
-            color: #faf9f6;
-        }
-        .breadcrumb .arrow {
+        .visit-button {
             display: inline-block;
-            margin: 0 5px;
-            font-size: 16px;
-            color: #e1ec50;
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+            pointer-events: auto;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            font-weight: bold;
         }
-        /* Copyright section */
-        .copyright {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            color: #faf9f6;
-            font-size: 14px;
-            font-family: 'Cairo', sans-serif;
-            font-weight: light;
-            z-index: 999;
+        .visit-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
         }
     </style>
-      <!-- Brand Info Section -->
-    <div id="brandInfo">
-        <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
-        <div class="brand-name"></div>
-        <div class="brand-description"></div>
-        <a href="#" class="visit-button" target="_blank">Visit Website</a>
+</head>
+<body>
+    <div id="container">
+        <div id="brandInfo">
+            <img class="brand-logo" src="/api/placeholder/80/80" alt="Brand Logo">
+            <div class="brand-name"></div>
+            <div class="brand-description"></div>
+            <a href="#" class="visit-button" target="_blank">Visit Website</a>
+        </div>
     </div>
-
-    <!-- Copyright Section -->
-    <div class="copyright">
-        &copy; Media Stacks Int. 2024
-    </div>
-
     <script>
         // Scene setup with enhanced lighting
+        const container = document.getElementById('container');
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setClearColor(0x000000);
-        document.body.appendChild(renderer.domElement);
+        const camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setClearColor(0x000000, 0); // Set alpha to 0 for transparency
+        container.appendChild(renderer.domElement);
 
-        // Generate 40 sample brands with enhanced data
+        // Generate 40 sample brands
         const brands = Array.from({ length: 40 }, (_, i) => ({
             name: `Brand ${i + 1}`,
             description: `Innovative solutions for the modern business landscape. Leading the industry in Brand ${i + 1}'s specialized sector.`,
@@ -112,12 +127,11 @@
             color: new THREE.Color().setHSL(i / 40, 1, 0.6)
         }));
 
-        // Create brand nodes in a larger sphere
+        // Create brand nodes
         const nodes = [];
         const brandGroup = new THREE.Group();
         scene.add(brandGroup);
 
-        // Fibonacci sphere distribution with increased size
         const phi = Math.PI * (3 - Math.sqrt(5));
         brands.forEach((brand, i) => {
             const y = 1 - (i / (brands.length - 1)) * 2;
@@ -127,7 +141,6 @@
             const x = Math.cos(theta) * radius;
             const z = Math.sin(theta) * radius;
 
-            // Enhanced sprite material with stronger glow
             const map = new THREE.TextureLoader().load('/api/placeholder/128/128');
             const material = new THREE.SpriteMaterial({
                 map: map,
@@ -137,145 +150,30 @@
             });
 
             const sprite = new THREE.Sprite(material);
-            sprite.position.set(x * 12, y * 12, z * 12); // Increased sphere size
-            sprite.scale.set(1.5, 1.5, 1.5); // Larger sprites
+            sprite.position.set(x * 12, y * 12, z * 12);
+            sprite.scale.set(1.5, 1.5, 1.5);
             sprite.userData = brand;
             nodes.push(sprite);
             brandGroup.add(sprite);
-
-            // Enhanced glow effect
-            const glowGeometry = new THREE.SphereGeometry(0.5, 32, 32);
-            const glowMaterial = new THREE.MeshBasicMaterial({
-                color: brand.color,
-                transparent: true,
-                opacity: 0.3,
-                blending: THREE.AdditiveBlending
-            });
-            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
-            glow.position.copy(sprite.position);
-            brandGroup.add(glow);
         });
 
-        // Enhanced connections with brighter lines
-        const connectionGroup = new THREE.Group();
-        brandGroup.add(connectionGroup);
-
-        function createConnections(activeNode) {
-            connectionGroup.clear();
-            nodes.forEach(node => {
-                if (node !== activeNode) {
-                    const distance = node.position.distanceTo(activeNode.position);
-                    if (distance < 18) { // Increased connection distance
-                        const geometry = new THREE.BufferGeometry().setFromPoints([
-                            activeNode.position,
-                            node.position
-                        ]);
-                        const material = new THREE.LineBasicMaterial({
-                            color: activeNode.userData.color,
-                            transparent: true,
-                            opacity: 0.5, // Increased opacity
-                            blending: THREE.AdditiveBlending,
-                            linewidth: 2 // Thicker lines
-                        });
-                        const line = new THREE.Line(geometry, material);
-                        connectionGroup.add(line);
-                    }
-                }
-            });
-        }
-
-        // Updated camera position
         camera.position.z = 30;
 
-        // Raycaster for interaction
-        const raycaster = new THREE.Raycaster();
-        const mouse = new THREE.Vector2();
-        let hoveredSprite = null;
-
-        // Enhanced mouse move handler
-        function onMouseMove(event) {
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObjects(nodes);
-            
-            if (intersects.length > 0) {
-                const sprite = intersects[0].object;
-                if (hoveredSprite !== sprite) {
-                    // Reset previous sprite
-                    if (hoveredSprite) {
-                        new TWEEN.Tween(hoveredSprite.scale)
-                            .to({ x: 1.5, y: 1.5 }, 300)
-                            .easing(TWEEN.Easing.Quadratic.Out)
-                            .start();
-                    }
-
-                    // Animate new sprite
-                    hoveredSprite = sprite;
-                    new TWEEN.Tween(sprite.scale)
-                        .to({ x: 2.5, y: 2.5 }, 300)
-                        .easing(TWEEN.Easing.Quadratic.Out)
-                        .start();
-
-                    createConnections(sprite);
-
-                    // Update info panel
-                    const brandInfo = document.getElementById('brandInfo');
-                    brandInfo.querySelector('.brand-name').textContent = sprite.userData.name;
-                    brandInfo.querySelector('.brand-description').textContent = sprite.userData.description;
-                    brandInfo.querySelector('.visit-button').href = sprite.userData.url;
-                    brandInfo.style.opacity = '1';
-
-                    // Animate brand info color
-                    const color = sprite.userData.color;
-                    brandInfo.style.borderColor = `rgba(${color.r * 255}, ${color.g * 255}, ${color.b * 255}, 0.4)`;
-                    brandInfo.style.boxShadow = `0 0 40px rgba(${color.r * 255}, ${color.g * 255}, ${color.b * 255}, 0.3)`;
-                }
-            } else if (hoveredSprite) {
-                // Reset sprite and hide info
-                new TWEEN.Tween(hoveredSprite.scale)
-                    .to({ x: 1.5, y: 1.5 }, 300)
-                    .easing(TWEEN.Easing.Quadratic.Out)
-                    .start();
-                hoveredSprite = null;
-                connectionGroup.clear();
-                document.getElementById('brandInfo').style.opacity = '0';
-            }
-        }
-
-        // Enhanced animation loop with brighter colors
-        let time = 0;
+        // Animation loop
         function animate() {
             requestAnimationFrame(animate);
-            time += 0.001;
-
-            // Smoother rotation
             brandGroup.rotation.y += 0.0005;
-            brandGroup.rotation.x = Math.sin(time * 0.3) * 0.1;
-
-            // Enhanced color animation
-            nodes.forEach((node, i) => {
-                const hue = (time + i / nodes.length) % 1;
-                node.material.color.setHSL(hue, 1, 0.6);
-            });
-
             TWEEN.update();
             renderer.render(scene, camera);
         }
 
-        // Event listeners
-        window.addEventListener('mousemove', onMouseMove, false);
         window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.aspect = container.clientWidth / container.clientHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setSize(container.clientWidth, container.clientHeight);
         });
 
         animate();
     </script>
-</div>
-
-  
 </body>
 </html>
