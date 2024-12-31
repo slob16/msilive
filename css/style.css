@@ -1097,7 +1097,7 @@ form label.error{
     position: absolute;
     left: 50px;
     bottom: 0px;
-    width: 200px;  /* Increase the width to ensure space for the rotated text */
+    width: 160px;  /* Increase the width to ensure space for the rotated text */
     transform-origin: left top;
     transform: rotate(-90deg);
     white-space: nowrap;  /* Prevent wrapping */
