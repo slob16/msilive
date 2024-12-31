@@ -324,7 +324,7 @@ p{
   margin: 0;
   line-height: 30px;
   padding: 16px 35px 14px;
-  color: none;
+  color: #faf9f6;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -483,7 +483,7 @@ p{
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #15191c;
+  background-color: #212e45;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../images/icons/preloader.gif);
@@ -1045,7 +1045,7 @@ form label.error{
 }
 
 .main-header-bar .social-links li a:hover{
-  color:#101010;
+  color:#212e45;
   background: #e1ec50;  
 }
 
@@ -1095,7 +1095,7 @@ form label.error{
   width:160px;
   transform-origin: left top;
   transform: rotate(-90deg);
-  fonnt-size: 14px;
+  font-size: 14px;
 }
 
 .main-header-bar .alt-logo-box{
@@ -1204,7 +1204,7 @@ form label.error{
   top: 0;
   width: 100%;
   bottom: 35px;
-  background: #15181b;
+  background: #212e45;
 }
 
 .main-nav-outer .outer-nav-box .bottom-bg{
@@ -1214,7 +1214,7 @@ form label.error{
   width: 100%;
   height: 35px;
   bottom: 0px;
-  background: #15181b;
+  background: #212e45;
   transform: skewX(-45deg);
 }
 
@@ -1362,7 +1362,7 @@ form label.error{
   position:relative;
   display:block;
   padding:5px 0px 5px 20px;
-  font-size:20px;
+  font-size:16px;
   color:#faf9f6;
   line-height:30px;
   font-weight:500;
@@ -1957,7 +1957,7 @@ form label.error{
   display: block;
   min-height: 100%;
   padding: 35px 30px 35px 30px;
-  background: #292c30;
+  background: #212e45;
   border-radius: 20px;
 }
 
@@ -1977,7 +1977,7 @@ form label.error{
   font-size: 32px;
   color: rgba(255, 255, 255, 0.50);
   text-align: center;
-  background: #303336;
+  background: #495061;
   border-radius: 0 20px 20px 0;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
