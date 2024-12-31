@@ -2032,7 +2032,7 @@ form label.error{
 .service-block .inner-box:hover .link-box a{
   background: #d8f744;
   border-color: #d8f744;
-  color: #292c30;
+  color: #212e45;
 }
 
 /*** 
@@ -2427,7 +2427,7 @@ form label.error{
 }
 
 .def-tabs-box .tab-buttons .active-btn{
-  color: #292c30;
+  color: #212e45;
   background: #d8f744;
 }
 
@@ -2515,7 +2515,7 @@ form label.error{
   line-height: 48px;
   text-align: center;
   background: rgba(255, 255, 255, 0.07);
-  color: #ffffff;
+  color: #faf9f6;
   font-size: 20px;
   border-radius: 20px;
   cursor:pointer;
@@ -2528,7 +2528,7 @@ form label.error{
 
 .accordion-box .block .acc-btn.active i{
   background: #d8f744;
-  color: #292c30;
+  color: #212e45;
 }
 
 .accordion-box .block .acc-content{
@@ -2569,7 +2569,7 @@ form label.error{
 .main-footer{
   position: relative;
   padding: 100px 0;
-  background: #292c30;
+  background: rgba(33, 46, 69, 0.6);
 }
 
 .main-footer .footer-inner{
@@ -2623,13 +2623,13 @@ form label.error{
   position: relative;
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
 .main-footer .info .text a{
   position: relative;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .main-footer .loc-info{
@@ -2656,7 +2656,7 @@ form label.error{
   height: 120px;
   line-height: 120px;
   font-size: 36px;
-  background: #292c30;
+  background: #212e45;
   color: #d8f744;
   text-align: center;
   border-radius: 20px 0 0 0;
@@ -2669,7 +2669,7 @@ form label.error{
 }
 
 .main-footer .scroll-top:hover{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 /*** 
