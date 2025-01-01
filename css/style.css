@@ -2547,11 +2547,11 @@ form label.error{
 
 .page-title .bread-crumb ul li a{
   position: relative;
-  color: #faf9f6;
+  color: #d8f744;
 }
 
 .page-title .bread-crumb ul li a:hover{
-  color: #d8f744;
+  color: #faf9f6;
   text-decoration: underline;
 }
 
