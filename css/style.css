@@ -1958,7 +1958,7 @@ form label.error{
   display: block;
   min-height: 100%;
   padding: 35px 30px 35px 30px;
-  background: #212e45;
+  background: rgba(33, 46, 69, 0.5)
   border-radius: 20px;
 }
 
@@ -1978,7 +1978,7 @@ form label.error{
   font-size: 32px;
   color: rgba(255, 255, 255, 0.50);
   text-align: center;
-  background: #495061;
+  background: #212e45;
   border-radius: 0 20px 20px 0;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
@@ -1989,7 +1989,7 @@ form label.error{
 
 .service-block .inner-box:hover .icon-box{
   background: #d8f744;
-  color: #292c30;
+  color: #212e45;
 }
 
 .service-block h5{
@@ -2119,7 +2119,7 @@ form label.error{
   position: relative;
   font-size: 15px;
   font-family: 'Gotham_Light', sans-serif;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(255, 255, 255, 0.80);
   line-height: 1.6em;
 }
 
@@ -2148,191 +2148,6 @@ form label.error{
   top: 0;
   line-height: 26px;
   color: #d8f744;
-}
-
-/*** 
-
-====================================================================
-  Team Section
-====================================================================
-
-***/
-
-.team-section{
-  position: relative;
-  margin-bottom: 60px;
-}
-
-.team-section .team{
-  position: relative;
-}
-
-.team-section .team .row{
-  margin: 0 -20px;
-}
-
-.team-block{
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.team-section .row .team-block{
-  position: relative;
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-
-.team-block .inner-box{
-  position: relative;
-  display: block;
-  min-height: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.team-block .image-box{
-  position: relative;
-  display: block;
-  background: #d8f744;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.team-block .image-box:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.80),rgba(0,0,0,0.0));
-  background: -ms-linear-gradient(bottom,rgba(0,0,0,0.80),rgba(0,0,0,0.0));
-  opacity: 0;
-  -webkit-transition:all 500ms ease;
-  -ms-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  -moz-transition:all 500ms ease;
-  transition:all 500ms ease;
-  z-index: 1;
-}
-
-.team-block .image-box img{
-  position: relative;
-  display: block;
-  width: 100%;
-  border-radius: 20px;
-  -webkit-transition:all 500ms ease;
-  -ms-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  -moz-transition:all 500ms ease;
-  transition:all 500ms ease;
-}
-
-.team-block .cat{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  font-family: 'Telegraf_Regular', sans-serif;
-  -webkit-transition:all 500ms ease;
-  -ms-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  -moz-transition:all 500ms ease;
-  transition:all 500ms ease;
-  z-index: 2;
-}
-
-.team-block:hover .cat{
-  opacity: 0;
-  visibility: hidden;
-  top: -100px;
-}
-
-.team-block .cat span{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 10px;
-  color: #292c30;
-  background: #d8f744;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  border-radius: 0 0 7px 7px;
-}
-
-.team-block .social{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  top: -100px;
-  -webkit-transition:all 500ms ease;
-  -ms-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  -moz-transition:all 500ms ease;
-  transition:all 500ms ease;
-  z-index: 2;
-}
-
-.team-block:hover .social{
-  opacity: 1;
-  visibility: visible;
-  top: 0;
-}
-
-.team-block .social a{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 6px;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 7px 15px;
-  width: 43px;
-  height: 38px;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  border-radius: 0 0 7px 7px;
-  -webkit-transition:all 500ms ease;
-  -ms-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  -moz-transition:all 500ms ease;
-  transition:
-  all 500ms ease;
-}
-
-.team-block .social a:hover{
-  background: #d8f744;
-  color: #292c30;
-}
-
-.team-block .name{
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  padding: 30px 20px;
-  font-size: 22px;
-  line-height: 30px;
-  text-align: center;
-  background: #15181b;
-  font-family: 'Telegraf_Regular', sans-serif;
-  border-radius: 0 0 20px 20px;
-  z-index: 3;
-}
-
-.team-block .name a{
-  position: relative;
-  display: block;
-  color: #ffffff;
 }
 
 /*** 
@@ -2398,7 +2213,7 @@ form label.error{
 
 .def-tabs-box{
   position: relative;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.0);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -2419,7 +2234,7 @@ form label.error{
   font-family: 'Gotham_Book', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: rgba(255,255,255,0.50);
+  color: rgba(33, 46, 69, 0.50);
   border-right: 1px solid rgba(255,255,255,0.10);
 }
 
@@ -2516,7 +2331,7 @@ form label.error{
   line-height: 48px;
   text-align: center;
   background: rgba(255, 255, 255, 0.07);
-  color: #faf9f6;
+  color: #e1ec50;
   font-size: 20px;
   border-radius: 20px;
   cursor:pointer;
@@ -2569,7 +2384,7 @@ form label.error{
 
 .main-footer{
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   background: rgba(33, 46, 69, 0.6);
 }
 
@@ -2657,7 +2472,7 @@ form label.error{
   height: 120px;
   line-height: 120px;
   font-size: 36px;
-  background: #212e45;
+  background: rgba(33, 46, 69, 0.5)
   color: #d8f744;
   text-align: center;
   border-radius: 20px 0 0 0;
