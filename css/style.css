@@ -2213,7 +2213,7 @@ form label.error{
 
 .def-tabs-box{
   position: relative;
-  border: 1px solid rgba(255,255,255,0.0);
+  border: 1px solid rgba(255,255,255,0.5);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -2222,7 +2222,7 @@ form label.error{
   display: table;
   width: 100%;
   vertical-align: middle;
-  border-bottom: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .def-tabs-box .tab-buttons .tab-btn{
@@ -2235,7 +2235,7 @@ form label.error{
   font-size: 16px;
   text-align: center;
   color: rgba(33, 46, 69, 1);
-  border-right: 1px solid rgba(255,255,255,0.10);
+  border-right: 1px solid rgba(255,255,255,0.5);
 }
 
 .def-tabs-box .tab-buttons .tab-btn:last-child{
@@ -2243,7 +2243,7 @@ form label.error{
 }
 
 .def-tabs-box .tab-buttons .active-btn{
-  color: #212e45;
+  color: #faf9f6;
   background: #d8f744;
 }
 
