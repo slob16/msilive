@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0b192c;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(../images/icons/preloader.gif);
+  background-image: url(..assets/images/preloader.gif);
 }
 
 img {
