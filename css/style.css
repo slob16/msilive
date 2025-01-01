@@ -6174,3 +6174,58 @@ form label.error{
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid #e1ec50;
 }
+
+}
+
+/* Background */
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b192c;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Glassmorphism Content Box */
+.content {
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    color: #f4f4f4;
+}
+
+/* Logo Position */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+}
+
+/* Terms Container */
+.terms-container {
+    margin-top: 40px;
+}
+
+.terms-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.terms-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
