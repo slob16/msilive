@@ -3567,17 +3567,17 @@ form label.error{
 ***/
 
 .sidebar-page-container{
-  position: relative;
+  position: inherit;
   padding: 0 0 60px;
 }
 
 .sidebar-page-container .content-side{
-  position: relative;
+  position: inherit;
   margin-bottom: 40px;
 }
 
 .sidebar-page-container .content-side .content-inner{
-  position: relative;
+  position: inherit;
   display: block;
   background: #212e45;
   border-radius: 15px 15px 15px 15px;
