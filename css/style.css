@@ -6193,7 +6193,7 @@ form label.error{
 /* Glassmorphism effect for terms */
 .glass-box {
     margin: 20px auto; /* Center it horizontally */
-    padding: 20px;
+    padding: 50px;
     max-width: 800px; /* Limit width for better readability */
     background: rgba(255, 255, 255, 0.1); /* Transparent white */
     border-radius: 15px; /* Rounded edges */
@@ -6212,6 +6212,6 @@ form label.error{
 }
 
 .glass-box p {
-    margin-bottom: 15px;
+    margin-bottom: 60px;
     text-align: justify;
 }
