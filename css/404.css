@@ -2,8 +2,8 @@
 .page-title {
     padding: 120px 0;
     text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7); /* Adds a dark overlay */
+    color: #faf9f6;
+    background-color: rgba(33, 46, 69, 0.5); /* Adds a dark overlay */
     position: relative;
 }
 
@@ -12,19 +12,19 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #ffcc00; /* Highlight color for the title */
+    color: #e1ec50; /* Highlight color for the title */
 }
 
 .page-title .subtitle {
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 15px;
-    color: #ccc; /* Subtle gray for subtitles */
+    color: #faf9f6; /* Subtle gray for subtitles */
 }
 
 .page-title p {
     font-size: 1rem;
-    color: #eee;
+    color: #faf9f6;
     margin-bottom: 30px;
 }
 
@@ -35,21 +35,21 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
+    color: #faf9f6;
+    background-color: #212e45;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .page-title .btn:hover {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: #e1ec50;
+    color: #faf9f6;
 }
 
 .services-section {
     padding: 60px 0;
     background: rgba(0, 0, 0, 0.9);
-    color: #fff;
+    color: #faf9f6;
     text-align: center;
 }
 
@@ -60,33 +60,33 @@
 .services-section .def-title-box .subtitle {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffcc00;
+    color: #faf9f6;
 }
 
 .services-section .def-title-box h3 {
     font-size: 2.5rem;
-    color: #fff;
+    color: #faf9f6;
     margin: 10px 0;
 }
 
 .services-section p {
     font-size: 1.1rem;
-    color: #ccc;
+    color: #212e45;
     margin-top: 15px;
 }
 
 /* Footer Customization for 404 */
 .main-footer {
     padding: 30px 0;
-    background-color: #222;
-    color: #bbb;
+    background-color: #212e45;
+    color: #e1ec50;
     text-align: center;
 }
 
 .main-footer .footer-inner p {
     margin: 0;
     font-size: 0.9rem;
-    color: #999;
+    color: #212e45;
 }
 
 .main-footer .footer-logo img {
