@@ -6191,7 +6191,7 @@ form label.error{
 }
 
 /* Glassmorphism Content Box */
-.content {
+.content-legal{
     width: 80%;
     max-width: 1200px;
     background: rgba(255, 255, 255, 0.1);
@@ -6201,11 +6201,11 @@ form label.error{
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
-    color: #f4f4f4;
+    color: #212e45;
 }
 
 /* Logo Position */
-.logo {
+.logo-legal{
     position: absolute;
     top: 20px;
     left: 20px;
