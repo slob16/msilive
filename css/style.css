@@ -6213,17 +6213,4 @@ form label.error{
     color: #faf9f6;
 }
 
-/* Terms Container */
-.terms-container {
-    margin-top: 40px;
-}
 
-.terms-container h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.terms-container p {
-    line-height: 1.6;
-    font-size: 16px;
-}
