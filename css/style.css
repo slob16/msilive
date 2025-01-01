@@ -289,7 +289,6 @@ p{
   background-position: center top;
   background-repeat: repeat-y;
   background-size: cover;
-  border-color: #e1ec50;
 }
 
 .fit-banner .main-content-container{
@@ -1075,7 +1074,7 @@ form label.error{
   position:relative;
   display:block;
   border-radius:2px;
-  border-bottom: 3px solid #212e45;
+  border-bottom: 3px solid #e1ec50;
   margin-bottom:5px;
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
