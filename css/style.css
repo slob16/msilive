@@ -2234,7 +2234,7 @@ form label.error{
   font-family: 'Gotham_Book', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: rgba(33, 46, 69, 1);
+  color: rgba(225, 236, 80, 1);
   border-right: 1px solid rgba(255,255,255,0.5);
 }
 
@@ -2243,7 +2243,7 @@ form label.error{
 }
 
 .def-tabs-box .tab-buttons .active-btn{
-  color: #faf9f6;
+  color: #212e45;
   background: #d8f744;
 }
 
