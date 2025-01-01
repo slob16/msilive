@@ -289,6 +289,7 @@ p{
   background-position: center top;
   background-repeat: repeat-y;
   background-size: cover;
+  border-color: #e1ec50;
 }
 
 .fit-banner .main-content-container{
