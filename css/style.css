@@ -2213,7 +2213,7 @@ form label.error{
 
 .def-tabs-box{
   position: relative;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.40);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -2222,7 +2222,7 @@ form label.error{
   display: table;
   width: 100%;
   vertical-align: middle;
-  border-bottom: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.40);
 }
 
 .def-tabs-box .tab-buttons .tab-btn{
@@ -2235,7 +2235,7 @@ form label.error{
   font-size: 16px;
   text-align: center;
   color: rgba(225, 236, 80, 1);
-  border-right: 1px solid rgba(255,255,255,0.10);
+  border-right: 1px solid rgba(255,255,255,0.40);
 }
 
 .def-tabs-box .tab-buttons .tab-btn:last-child{
@@ -2309,11 +2309,11 @@ form label.error{
   width: 100%;
   line-height:30px;
   font-weight:400;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255, 0.60);
   padding:8px 20px 8px 70px;
   font-size: 16px;
   font-family: 'Gotham_Book', sans-serif;
-  border: 1px solid rrgba(225, 236, 80, 0.50);
+  border: 1px solid rgba(225, 236, 80, 0.40);
   border-radius: 20px;
   cursor:pointer;
 }
@@ -2330,7 +2330,7 @@ form label.error{
   width: 48px;
   line-height: 48px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.70);
   color: #e1ec50;
   font-size: 20px;
   border-radius: 20px;
@@ -2351,7 +2351,7 @@ form label.error{
   position:relative;
   width: 100%;
   margin-top: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.50);
+  border: 1px solid rgba(255, 255, 255, 0.70);
   border-radius: 20px;
   display: none;
 }
