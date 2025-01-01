@@ -28,15 +28,17 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 
-.loader {
-  border: 16px solid #111;
-  border-radius: 50%;
-  border-top: 16px double #5076db;
-  border-bottom: 16px double #5076db;
-  width: 50px;
-  height: 50px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0b192c;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/preloader.gif);
 }
 
 @-webkit-keyframes spin {
