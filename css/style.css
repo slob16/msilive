@@ -2385,7 +2385,7 @@ form label.error{
 .main-footer{
   position: relative;
   padding: 20px 0;
-  background: rgba(33, 46, 69, 0.4);
+  background: rgba(11, 25, 44, 0.4);
 }
 
 .main-footer .footer-inner{
@@ -2472,7 +2472,7 @@ form label.error{
   height: 120px;
   line-height: 120px;
   font-size: 36px;
-  background: rgba(33, 46, 69, 0.4);
+  background: rgba(11, 25, 44, 0.4);
   color: #d8f744;
   text-align: center;
   border-radius: 20px 0 0 0;
