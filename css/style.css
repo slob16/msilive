@@ -6178,7 +6178,7 @@ form label.error{
 }
 
 /* Background */
-.background {
+.background-legal {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -6202,17 +6202,6 @@ form label.error{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
     color: #212e45;
-}
-
-/* Logo Position */
-.logo-legal{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.logo img {
-    width: 100px; /* Adjust size as needed */
 }
 
 /* Terms Container */
