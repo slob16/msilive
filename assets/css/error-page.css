@@ -167,13 +167,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-section .content-detail .back-btn .btn {
   padding: 8px 15px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #faf9f6;
+  border: 1px solid #faf9f6;
   border-radius: 30px;
   font-size: 14px;
 }
 .page-section .content-detail .back-btn .btn:hover {
-  background-color: #5076db;
-  color: #fff;
+  background-color: #e1ec50;
+  color: #faf9f6;
 }
-/*# sourceMappingURL=error-page.css.map */
+
