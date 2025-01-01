@@ -1074,7 +1074,7 @@ form label.error{
   position:relative;
   display:block;
   border-radius:2px;
-  border-bottom: 3px solid #faf9f6;
+  border-bottom: 3px solid #212e45;
   margin-bottom:5px;
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
