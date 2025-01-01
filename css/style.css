@@ -2570,7 +2570,7 @@ form label.error{
 
 .contact-section .info-box{
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.50);
   margin-bottom: 50px;
 } 
 
@@ -2588,7 +2588,7 @@ form label.error{
   display: block;
   min-height: 100%;
   padding: 40px 20px 40px 40px;
-  border-right: 1px solid rgba(255, 255, 255, 0.10);
+  border-right: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 .contact-section .info-box .info-block:last-child .inner-box{
@@ -2621,13 +2621,13 @@ form label.error{
 .contact-section .info-box .info-block .info{
   position: relative;
   font-size: 14px;
-  color: #666666;
+  color: #e1ec50;
   font-family: 'Telegraf_Regular', sans-serif;
   line-height: 20px;
 }
 
 .contact-section .info-box .info-block .info a{
-  color: #666666;
+  color: #e1ec50;
 }
 
 .contact-section .form-col{
