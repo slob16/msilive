@@ -2234,7 +2234,7 @@ form label.error{
   font-family: 'Gotham_Book', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: rgba(225, 236, 80, 1);
+  color: rgba(255,255,255,0.40);
   border-right: 1px solid rgba(255,255,255,0.40);
 }
 
@@ -2313,7 +2313,7 @@ form label.error{
   padding:8px 20px 8px 70px;
   font-size: 16px;
   font-family: 'Gotham_Book', sans-serif;
-  border: 1px solid rgba(225, 236, 80, 0.40);
+  border: 1px solid rgba(255,255,255,0.40);
   border-radius: 20px;
   cursor:pointer;
 }
