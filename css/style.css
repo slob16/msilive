@@ -169,7 +169,7 @@ body {
   color: #faf9f6;
   line-height: 1.60em;
   font-weight: 400;
-  background: #212e45;
+  background: #0b192c;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   cursor: none;
@@ -1045,7 +1045,7 @@ form label.error{
 }
 
 .main-header-bar .social-links li a:hover{
-  color:#212e45;
+  color:#0b192c;
   background: #e1ec50;  
 }
 
@@ -1989,7 +1989,7 @@ form label.error{
 
 .service-block .inner-box:hover .icon-box{
   background: #d8f744;
-  color: #212e45;
+  color: #0b192c;
 }
 
 .service-block h5{
@@ -2033,7 +2033,7 @@ form label.error{
 .service-block .inner-box:hover .link-box a{
   background: #d8f744;
   border-color: #d8f744;
-  color: #212e45;
+  color: #0b192c;
 }
 
 /*** 
@@ -2243,7 +2243,7 @@ form label.error{
 }
 
 .def-tabs-box .tab-buttons .active-btn{
-  color: #212e45;
+  color: #0b192c;
   background: #d8f744;
 }
 
@@ -2344,7 +2344,7 @@ form label.error{
 
 .accordion-box .block .acc-btn.active i{
   background: #d8f744;
-  color: #212e45;
+  color: #0b192c;
 }
 
 .accordion-box .block .acc-content{
@@ -4300,7 +4300,7 @@ form label.error{
   height: 80px;
   line-height: 80px;
   background: #faf9f6;
-  color: #212e45;
+  color: #0b192c;
   font-size: 30px;
   text-align: center;
   border-radius: 20px 0 0 20px;
@@ -5105,7 +5105,7 @@ form label.error{
 
 .banner-eight .pager-box .pager-item.active .inner{
   border-bottom-color: #e1ec50;
-  color: #212e45;
+  color: #0b192c;
   background: #e1ec50;
 }
 
@@ -5481,7 +5481,7 @@ form label.error{
 .banner-nine .slide-item .text-content .inner-box{
   position: relative;
   display: block;
-  background: #212e45;
+  background: #0b192c;
   font-family: 'Telegraf_UltraLight', sans-serif;
   color: #faf9f6;
   padding: 40px 40px;
@@ -5851,13 +5851,13 @@ form label.error{
 }
 
 .banner-ten .bx-controls .bx-next{
-  color: #212e45;
+  color: #0b192c;
   background: #e1ec50;
 }
 
 .banner-ten .bx-controls .bx-prev:hover,
 .banner-ten .bx-controls .bx-next:hover{
-  color: #212e45;
+  color: #0b192c;
   background: #e1ec50;
 }
 
@@ -6126,7 +6126,7 @@ form label.error{
 
 .banner-eleven .bx-controls .bx-prev:hover,
 .banner-eleven .bx-controls .bx-next:hover{
-  color: #212e45;
+  color: #0b192c;
   border-color: #e1ec50;
   background: #e1ec50;
 }
