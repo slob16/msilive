@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>Privacy Policy</title>
-<script src="https://kit.fontawesome.com/a7a023d9b8.js" crossorigin="anonymous"></script>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -16,33 +15,102 @@
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
 
 </head>
+
 <body>
-    <div class="site-container">
+  <div class="site-container">
     <div class="cursor"></div>
-          <!-- Preloader -->
+    <!-- Preloader -->
     <div class="preloader"></div>
+
+    <div class="menu-backdrop"></div>
         
-    <div class="background-legal">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" />
+    <!-- Main Header Bar-->
+    <header class="main-header-bar">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <!--Header-Upper-->
+        <div class="header-bar-inner">
+            <div class="outer-box clearfix">
+                
+                <!--Nav Toggler-->
+                <div class="nav-toggler"><button class="toggler-btn"><span class="bar bar-one"></span><span class="bar bar-two"></span><span class="bar bar-three"></span></button></div>
+                
+                <!--Social Links-->
+                    <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="https://www.linkedin.com/company/media-stacks"><span class="fab fa-linkedin"></span></a></li>
+                        <li><a href="https://www.mediastacks.co.uk/waitlist"><span class="fa-solid fa-stopwatch-20"></span></a></li>
+                        <li><a href="https://www.mediastacks.co.uk/contact"><span class="fa fa-envelope"></span></a></li>
+                    </ul>
+                </div>
+                
+                <!--Copyright Text-->
+               <div class="copyright">&copy; Media Stacks Int. 2024</div>
+            </div>
+
+            <!--Alt Logo Box-->
+            <div class="alt-logo-box"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            
+            <!--Nav Bg Box-->
+            <div class="nav-bg-box"></div>
+            
+            <!--Main Nav Outer-->
+            <div class="main-nav-outer">
+                <div class="nav-closer"><img src="images/icons/close-icon.png" alt=""></div>
+                <div class="outer-nav-box">
+                    <div class="top-bg"></div>
+                    <div class="bottom-bg"></div>
+                    <div class="main-nav-box" data-scrollbar="">
+                        <!--Logo Box-->
+                        <div class="main-logo-box"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                        <div class="main-nav">
+                               <ul class="navigation">
+                                <li><a href="index.html">home</a></li>
+                                </li>
+                                <li><a>ecosystem - coming soon</a></li>
+                                </li>
+                                <li class="current"><a href="about.html">about us</a></li>
+                                </li>
+                                <li><a href="contact.html">get in touch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="content-wrapper">
-        <div class="content-legal">
+        <!--End Header Upper-->
+    </header>
+    <!--End Main Header -->
+
+    <div class="scroll-container">
+        <div class="main-content-container" id="scroll-container">
+            <div class="body-bg-layer" style="background-image: url(images/background/body-bg-1.jpg);"></div>
             <!-- Page Title -->
             <section class="page-title" id="to-top-div">
                 <div class="auto-container">
-                    <h1><span>Privacy Policy</span></h1>
+                    <h1><span>privacy policy</span></h1>
                     <div class="bread-crumb">
                         <ul class="clearfix">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current">Terms of Service</li>
+                            <li><a href="index.html">home</a></li>
+                            <li class="current">privacy policy</li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <div class="terms-container">
-                <h1>Privacy Policy</h1>
-                <p>Terms of Service Last Updated: 1st January 2025
+            <!--End Banner Section -->
+
+            <!--Sidebar Page-->
+            <div class="sidebar-page-container">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <!--Content Side-->
+                        <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                            <div class="content-inner">
+                                <div class="blog-details">
+                                    <div class="lower">
+                                        <h3>Privacy Policy</h3>
+                                        <div class="text-content text">
+                                        <p>Terms of Service Last Updated: 1st January 2025
                 <p>Welcome to MediaStacks.co.uk. These Terms of Service govern your access to and use of our website and services. By accessing or using our website, you agree to comply with these terms.</p>
                 <p>1. Acceptance of Terms</p>
                 <p>By accessing and using the website at www.mediastacks.co.uk, you agree to be bound by these Terms of Service, including any updates or modifications made by MediaStacks. If you do not agree with any part of these Terms, please do not use our services.</p>
@@ -71,10 +139,9 @@
                 <p>Email: support@mediastacks.co.uk</p>
                 <p>Address: upon request</p>
                 </p>
-                <p>...</p>
-            </div>
-        </div>
-        <!-- Main Footer -->
+                   </div>    
+                        </div>
+            <!-- Main Footer -->
         <footer class="main-footer">
             <button class="scroll-top scroll-to-target" data-target="html" id="scroll-to-top">
                 <span class="icon fa fa-arrow-alt-circle-up"></span>
@@ -90,9 +157,7 @@
                                 <!-- Centralized Links -->
                                 <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
                                 <span>|</span>
-                                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-                               <span>|</span>
-                              <a class="copyright">&copy; Media Stacks Int. 2024</a>
+                                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>     
                             </div>
                         </div>
                     </div>
@@ -100,6 +165,7 @@
             </div>
         </footer>
     </div>
+<!--End Site Container--> 
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
