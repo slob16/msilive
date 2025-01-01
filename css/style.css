@@ -2521,7 +2521,7 @@ form label.error{
   padding: 5px 0;
   text-transform: none;
   margin-right: 26px;
-  color: #d8f744;
+  color: #faf9f6;
 }
 
 .page-title .bread-crumb ul li:last-child{
@@ -2551,7 +2551,7 @@ form label.error{
 }
 
 .page-title .bread-crumb ul li a:hover{
-  color: #faf9f6;
+  color: #d8f744;
   text-decoration: underline;
 }
 
