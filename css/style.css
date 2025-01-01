@@ -1,6 +1,3 @@
-/* Vosio Portfolio Template */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /*
@@ -9,7 +6,6 @@
   font-family: 'Montserrat', sans-serif;
 */
 
-
 @import url('font-awesome.css');
 @import url('simple-line-icons.css');
 @import url('animate.css');
@@ -17,7 +13,6 @@
 @import url('smooth-scrollbar.css');
 @import url('scrollbar.css');
 @import url('jquery.fancybox.min.css');
-
 
 @font-face {
     font-family: 'Gotham_Book';
@@ -171,10 +166,10 @@
 body {
   font-family: 'Cairo', sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #faf9f6;
   line-height: 1.60em;
   font-weight: 400;
-  background: #101010;
+  background: #212e45;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   cursor: none;
@@ -183,7 +178,7 @@ body {
 a{
   text-decoration: none;
   cursor: pointer;
-  color: #d8f744;
+  color: #e1ec50;
 }
 
 a:hover, a:focus, a:visited, a:active, button:active, button:focus {
@@ -205,12 +200,12 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 400;
   margin: 0 0 15px;
   background: none;
-  color: #ffffff;
+  color: #faf9f6;
   line-height: 1.33em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 h1{
@@ -329,13 +324,13 @@ p{
   margin: 0;
   line-height: 30px;
   padding: 16px 35px 14px;
-  color: #000000;
+  color: #faf9f6;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   text-transform: none;
-  background: #d8f744;
-  border: 2px solid #d8f744;
+  background: none;
+  border: 2px solid #e1ec50;
   border-radius: 7px;
   -moz-transition:all 0.3s ease;
   -webkit-transition:all 0.3s ease;
@@ -375,9 +370,9 @@ p{
 }
 
 .btn-style-one:hover{
-  color: #d8f744;
+  color: #e1ec50;
   background: none;
-  border-color: #d8f744;
+  border-color: #e1ec50;
 }
 
 .btn-style-two{
@@ -388,14 +383,14 @@ p{
   margin: 0;
   line-height: 26px;
   padding: 16px 30px 14px;
-  color: #000000;
+  color: none;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: #d8f744;
-  border: 2px solid #d8f744;
+  background: #e1ec50;
+  border: 2px solid #e1ec50;
   border-radius: 0px;
   -moz-transition:all 0.3s ease;
   -webkit-transition:all 0.3s ease;
@@ -423,9 +418,9 @@ p{
 }
 
 .btn-style-two:hover{
-  color: #d8f744;
+  color: #e1ec50;
   background: none;
-  border-color: #d8f744;
+  border-color: #e1ec50;
 }
 
 
@@ -438,7 +433,7 @@ p{
 }
 
 .theme_color {
-  color: #d8f744;
+  color: #e1ec50;
 }
 
 .light-font {
@@ -488,7 +483,7 @@ p{
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #15191c;
+  background-color: #212e45;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../images/icons/preloader.gif);
@@ -516,7 +511,7 @@ img {
   right: 20px;
   width: 44px;
   height: 52px;
-  color: #ffffff;
+  color: #faf9f6;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 52px;
@@ -524,7 +519,7 @@ img {
   z-index: 100;
   cursor: pointer;
   border-radius: 15px 15px 0 0;
-  background: #d8f744;
+  background: #e1ec50;
   display: none;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -541,8 +536,8 @@ img {
 }
 
 .scroll-to-top:hover {
-  color: #ffffff;
-  background: #d8f744;
+  color: #faf9f6;
+  background: #e1ec50;
 }
 
 /*** 
@@ -596,7 +591,7 @@ form .field-inner select:focus + .dot,
 form .field-inner textarea:focus + .dot{
   left: auto;
   right: 0;
-  border-color: #ffffff;
+  border-color: #faf9f6;
 }
 
 form .field-inner .alt-icon{
@@ -606,7 +601,7 @@ form .field-inner .alt-icon{
   margin-top: -15px;
   line-height: 30px;
   font-size: 16px;
-  color: #d8f744;
+  color: #e1ec50;
   z-index: 1;
   pointer-events: none;
 }
@@ -614,7 +609,7 @@ form .field-inner .alt-icon{
 form .form-group .field-label{
   position:relative;
   display: block;
-  color: #ffffff;
+  color: #faf9f6;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -650,7 +645,7 @@ form .form-group select{
     display: block;
     height: 30px;
     width: 100%;
-    color: #ffffff;
+    color: #faf9f6;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -705,7 +700,7 @@ form .form-group textarea:focus,
 form .form-group select:focus,
 .form-group .ui-selectmenu-button.ui-button:focus,
 .form-group .ui-selectmenu-button.ui-button:active{
-  border-color: #ffffff;
+  border-color: #faf9f6;
 }
 
 form ::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.50);}
@@ -757,8 +752,8 @@ form label.error{
   width: 24px;
   height: 24px;
   line-height: 22px;
-  background: #ffffff;
-  border: 1px solid #d8f744;
+  background: #faf9f6;
+  border: 1px solid #e1ec50;
   border-radius: 50%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -769,8 +764,8 @@ form label.error{
 
 .check-block input:checked + label:before{
   content: '';
-  background: #d8f744;
-  color: #ffffff;
+  background: #e1ec50;
+  color: #faf9f6;
 }
 
 .check-block input:checked + label:after{
@@ -784,7 +779,7 @@ form label.error{
   line-height: 22px;
   text-align: center;
   font-size: 12px;
-  color: #ffffff;
+  color: #faf9f6;
   line-height: 22px;
 }
 
@@ -820,8 +815,8 @@ form label.error{
   top: 4px;
   width: 20px;
   height: 20px;
-  background: #ffffff;
-  border: 1px solid #d8f744;
+  background: #faf9f6;
+  border: 1px solid #e1ec50;
   border-radius: 50%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -837,7 +832,7 @@ form label.error{
   top: 8px;
   width: 12px;
   height: 12px;
-  background: #d8f744;
+  background: #e1ec50;
   border-radius: 50%;
   opacity: 0;
   z-index: 1;
@@ -859,7 +854,7 @@ form label.error{
   font-family: 'Cairo', sans-serif;
   color:#585f5f;
   border-radius:0px;
-  background-color:#ffffff;
+  background-color:#faf9f6;
   border: 1px solid #e0e0e0;
 }
 
@@ -881,7 +876,7 @@ form label.error{
   width:15px;
   height:30px;
   display:block;
-  color:#d8f744;
+  color:#e1ed50;
   line-height:20px;
   font-size:14px;
   font-weight:700;
@@ -896,7 +891,7 @@ form label.error{
 }
 
 .ui-widget.ui-widget-content{
-  border:1px solid #d8f744;
+  border:1px solid #e1ec50;
   border-top: none;
   font-family: 'Cairo', sans-serif;
   border-radius: 0;
@@ -905,7 +900,7 @@ form label.error{
 
 .ui-menu .ui-menu-item{
   font-size:16px;
-  border-bottom:1px solid #d8f744;
+  border-bottom:1px solid #e1ec50;
 }
 
 .ui-menu .ui-menu-item:last-child{
@@ -931,7 +926,7 @@ form label.error{
   background: #252525;
   font-weight: 400;
   border: none;
-  border-bottom:1px solid #d8f744;
+  border-bottom:1px solid #e1ec50;
   margin: 0;
 }
 
@@ -952,7 +947,7 @@ form label.error{
   z-index:9999;
   width:130px;
   height:100%;
-  background:rgba(255, 255, 255, 0.0);
+  background:rgba(33, 46, 69, 0.0);
 }
 
 .menu-backdrop{
@@ -1050,8 +1045,8 @@ form label.error{
 }
 
 .main-header-bar .social-links li a:hover{
-  color:#101010;
-  background: #d8f744;  
+  color:#212e45;
+  background: #e1ec50;  
 }
 
 .main-header-bar .nav-toggler{
@@ -1079,7 +1074,7 @@ form label.error{
   position:relative;
   display:block;
   border-radius:2px;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #faf9f6;
   margin-bottom:5px;
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
@@ -1094,12 +1089,14 @@ form label.error{
 }
 
 .main-header-bar .copyright{
-    position: absolute;
-    left: 50px;
-    bottom: 0px;
-    width: 160px;
-    transform-origin: left top;
-    transform: rotate(-90deg);
+  position:absolute;
+  left: 50px;
+  bottom:0px;
+  width:160px;
+  transform-origin: left top;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  font-colour: #e1ec50;
 }
 
 .main-header-bar .alt-logo-box{
@@ -1199,7 +1196,7 @@ form label.error{
 .main-nav-outer .scrollbar-thumb, 
 .main-nav-outer .scrollbar-thumb, 
 .main-nav-outer .scrollbar-thumb{
-  background: rgba(255, 255, 255, 0.40);
+  background: rgba(33, 46, 69, 0.40); 
 }
 
 .main-nav-outer .outer-nav-box .top-bg{
@@ -1208,7 +1205,7 @@ form label.error{
   top: 0;
   width: 100%;
   bottom: 35px;
-  background: #15181b;
+  background: #212e45;
 }
 
 .main-nav-outer .outer-nav-box .bottom-bg{
@@ -1218,7 +1215,7 @@ form label.error{
   width: 100%;
   height: 35px;
   bottom: 0px;
-  background: #15181b;
+  background: #212e45;
   transform: skewX(-45deg);
 }
 
@@ -1366,8 +1363,8 @@ form label.error{
   position:relative;
   display:block;
   padding:5px 0px 5px 20px;
-  font-size:20px;
-  color:#ffffff;
+  font-size:16px;
+  color:#faf9f6;
   line-height:30px;
   font-weight:500;
   text-transform:none;
@@ -1426,7 +1423,7 @@ form label.error{
   display:block;
   padding:5px 0px;
   font-size:18px;
-  color:#ffffff;
+  color:#faf9f6;
   line-height:24px;
   font-weight:600;
   text-transform:none;
@@ -1441,7 +1438,7 @@ form label.error{
 
 .main-nav-outer .main-nav-box .main-nav .navigation > li > ul > li:hover > a,
 .main-nav-outer .main-nav-box .main-nav .navigation > li > ul > li.current > a{
-  color:#d8f744;  
+  color:#e1ec50;  
 }
 
 
@@ -1487,7 +1484,7 @@ form label.error{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.0);
+  background: rgba(33, 46, 69, 0.0);
   z-index: 1;
 }
 
@@ -1510,7 +1507,7 @@ form label.error{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.0);
+  background: rgba(33, 46, 69, 0.0);
   z-index: 1;
 }
 
@@ -1519,7 +1516,7 @@ form label.error{
   left: 130px;
   bottom: 0;
   width: 0;
-  border-bottom: 5px solid #d8f744;
+  border-bottom: 5px solid #e1ec50;
   z-index: 2;
 }
 
@@ -1602,7 +1599,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 62px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: uppercase;
   line-height:1.0em;
   margin:0px 0px;
@@ -1647,7 +1644,7 @@ form label.error{
   width: 80px;
   height: 80px;
   margin-left: 5px;
-  color: #ffffff;
+  color: #faf9f6;
   font-size: 30px;
   text-align: center;
   line-height: 80px;
@@ -1661,7 +1658,7 @@ form label.error{
 
 .banner-section .owl-theme .owl-nav .owl-next:hover,
 .banner-section .owl-theme .owl-nav .owl-prev:hover{
-  background: #d8f744;
+  background: #e1ec50;
   color: #101010;
 }
 
@@ -1699,7 +1696,7 @@ form label.error{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.0);
+  background: rgba(33, 46, 69, 0.0);
   z-index: 1;
 }
 
@@ -1723,7 +1720,7 @@ form label.error{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.50);
+  background: rgba(33, 46, 69, 0.50);
   border-radius: 30px;
   z-index: 1;
 }
@@ -1796,7 +1793,7 @@ form label.error{
   font-family: 'Telegraf_UltraBold', sans-serif;
   font-weight: 400;
   font-size: 54px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: none;
   line-height:1.20em;
   margin:0px 0px;
@@ -1852,7 +1849,7 @@ form label.error{
   height: 50px;
   font-size: 18px;
   line-height: 50px;
-  color: #ffffff;
+  color: #faf9f6;
   text-align: center;
   background: rgba(255,255,255,0.15);
   margin: 0 10px 0 0;
@@ -1866,7 +1863,7 @@ form label.error{
 
 .banner-two .owl-theme .owl-nav .owl-next:hover,
 .banner-two .owl-theme .owl-nav .owl-prev:hover{
-  background: #d8f744;
+  background: #e1ec50;
   color: #292c30;
 }
 
@@ -1893,7 +1890,7 @@ form label.error{
   display: block;
   width: 18px;
   height: 12px;
-  background: #d8f744;
+  background: #e1ec50;
 }
 
 .def-title-box .patt span:after{
@@ -1961,7 +1958,7 @@ form label.error{
   display: block;
   min-height: 100%;
   padding: 35px 30px 35px 30px;
-  background: #292c30;
+  background: #212e45;
   border-radius: 20px;
 }
 
@@ -1981,7 +1978,7 @@ form label.error{
   font-size: 32px;
   color: rgba(255, 255, 255, 0.50);
   text-align: center;
-  background: #303336;
+  background: #495061;
   border-radius: 0 20px 20px 0;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
@@ -2036,7 +2033,7 @@ form label.error{
 .service-block .inner-box:hover .link-box a{
   background: #d8f744;
   border-color: #d8f744;
-  color: #292c30;
+  color: #212e45;
 }
 
 /*** 
@@ -2431,7 +2428,7 @@ form label.error{
 }
 
 .def-tabs-box .tab-buttons .active-btn{
-  color: #292c30;
+  color: #212e45;
   background: #d8f744;
 }
 
@@ -2519,7 +2516,7 @@ form label.error{
   line-height: 48px;
   text-align: center;
   background: rgba(255, 255, 255, 0.07);
-  color: #ffffff;
+  color: #faf9f6;
   font-size: 20px;
   border-radius: 20px;
   cursor:pointer;
@@ -2532,7 +2529,7 @@ form label.error{
 
 .accordion-box .block .acc-btn.active i{
   background: #d8f744;
-  color: #292c30;
+  color: #212e45;
 }
 
 .accordion-box .block .acc-content{
@@ -2573,7 +2570,7 @@ form label.error{
 .main-footer{
   position: relative;
   padding: 100px 0;
-  background: #292c30;
+  background: rgba(33, 46, 69, 0.6);
 }
 
 .main-footer .footer-inner{
@@ -2627,13 +2624,13 @@ form label.error{
   position: relative;
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
 .main-footer .info .text a{
   position: relative;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .main-footer .loc-info{
@@ -2660,7 +2657,7 @@ form label.error{
   height: 120px;
   line-height: 120px;
   font-size: 36px;
-  background: #292c30;
+  background: #212e45;
   color: #d8f744;
   text-align: center;
   border-radius: 20px 0 0 0;
@@ -2673,7 +2670,7 @@ form label.error{
 }
 
 .main-footer .scroll-top:hover{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 /*** 
@@ -4169,7 +4166,7 @@ form label.error{
   top: 50%;
   margin-top: -1px;
   width: 1000px;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 .sidebar-side .recent-post{
@@ -4221,7 +4218,7 @@ form label.error{
   font-size: 14px;
   text-transform: uppercase;
   color: #292c30;
-  background: #d8f744;
+  background: #e1ec50;
   line-height: 20px;
   padding: 4px 10px;
   border-radius: 7px;
@@ -4240,7 +4237,7 @@ form label.error{
 }
 
 .sidebar-side .recent-post .post .text a{
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .sidebar-side .cat-widget{
@@ -4268,7 +4265,7 @@ form label.error{
   top: 6px;
   width: 14px;
   height: 14px;
-  background: #d8f744;
+  background: #e1ec50;
   border-radius: 4px;
 }
 
@@ -4278,7 +4275,7 @@ form label.error{
   font-family: 'Telegraf_Regular', sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .sidebar-side .categories ul li a:hover{
@@ -4346,7 +4343,7 @@ form label.error{
   line-height: 30px;
   font-size: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .active .spinner{
@@ -4369,22 +4366,22 @@ form label.error{
         border-top-color: transparent;
     }
     25%{
-        border-top-color: #d8f744;
+        border-top-color: #e1ec50;
     }
     50%{
-        border-top-color: #d8f744;
-        border-right-color: #d8f744;
+        border-top-color: #e1ec50;
+        border-right-color: #e1ec50;
     }
     75%{
-        border-top-color: #d8f744;
-        border-right-color: #d8f744;
-        border-bottom-color: #d8f744;
+        border-top-color: #e1ec50;
+        border-right-color: #e1ec50;
+        border-bottom-color: #e1ec50;
     }
     100%{
-        border-top-color: #d8f744;
-        border-right-color: #d8f744;
-        border-bottom-color: #d8f744;
-        border-left-color: #d8f744;
+        border-top-color: #e1ec50;
+        border-right-color: #e1ec50;
+        border-bottom-color: #e1ec50;
+        border-left-color: #e1ec50;
     }
 }
 
@@ -4461,7 +4458,7 @@ form label.error{
 }
 
 .banner-four .pager-outer .pager-item.active{
-  background: #d8f744;
+  background: #e1ec50;
   color: #292c30;
   padding-left: 120px;
   border-radius: 20px 0 0 20px;
@@ -4487,8 +4484,8 @@ form label.error{
   width: 84px;
   height: 80px;
   line-height: 80px;
-  background: #ffffff;
-  color: #101010;
+  background: #faf9f6;
+  color: #212e45;
   font-size: 30px;
   text-align: center;
   border-radius: 20px 0 0 20px;
@@ -4531,7 +4528,7 @@ form label.error{
   font-weight: 400;
   font-size: 48px;
   color: #292c30;
-  background: #d8f744;
+  background: #e1ec50;
   line-height: 60px;
   text-align: center;
   border-radius: 0 0 0 20px;
@@ -4564,7 +4561,7 @@ form label.error{
   top: 50%;
   margin-top: -1px;
   width: 20px;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 
@@ -4705,7 +4702,7 @@ form label.error{
 }
 
 .portfolio-item-two h5 a{
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .portfolio-item-two .cat{
@@ -4732,7 +4729,7 @@ form label.error{
   top: 50%;
   margin-top: -1px;
   width: 20px;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 .banner-five .horizontal-scroll-box .portfolio-item-two{
@@ -4936,14 +4933,14 @@ form label.error{
   font-family: 'Telegraf_UltraBold', sans-serif;
   font-weight: 400;
   font-size: 28px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: capitalize;
   line-height:1.2em;
   margin:0px 0px;
 }
 
 .banner-six .slide-item h3 a{
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .banner-six .slide-item .cat{
@@ -4970,7 +4967,7 @@ form label.error{
   top: 50%;
   margin-top: -1px;
   width: 20px;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 .banner-six .slide-item .cat span:after{
@@ -4980,7 +4977,7 @@ form label.error{
   top: 50%;
   margin-top: -1px;
   width: 20px;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 .banner-six .owl-nav,
@@ -5060,7 +5057,7 @@ form label.error{
   display: block;
   font-size: 17px;
   line-height: 1.5em;
-  color: #ffffff;
+  color: #faf9f6;
   font-family: 'Telegraf_UltraLight', sans-serif;
   border-top: 3px solid rgba(255, 255, 255, 0.30);
   padding-top: 20px;
@@ -5072,7 +5069,7 @@ form label.error{
 }
 
 .banner-seven .pager-outer .pager-item.active .text{
-  border-top-color: #d8f744;
+  border-top-color: #e1ec50;
 }
 
 .banner-seven .pager-outer .pager-item .text strong{
@@ -5179,7 +5176,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 60px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: capitalize;
   line-height:1.0em;
   margin:0px 0px;
@@ -5279,7 +5276,7 @@ form label.error{
   min-height: 80px;
   background: #070708;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  color: #ffffff;
+  color: #faf9f6;
   transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
@@ -5292,9 +5289,9 @@ form label.error{
 }
 
 .banner-eight .pager-box .pager-item.active .inner{
-  border-bottom-color: #d8f744;
-  color: #101010;
-  background: #d8f744;
+  border-bottom-color: #e1ec50;
+  color: #212e45;
+  background: #e1ec50;
 }
 
 .banner-eight .pager-box .pager-item .image,
@@ -5429,7 +5426,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 60px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: uppercase;
   line-height:1.0em;
   margin:0px 0px;
@@ -5440,7 +5437,7 @@ form label.error{
   font-family: 'Telegraf_UltraLight', sans-serif;
   font-weight: 400;
   font-size: 26px;
-  color: #d8f744;
+  color: #e1ec50;
   text-transform: none;
   line-height:1.0em;
   margin:0px 0px 15px;
@@ -5477,12 +5474,12 @@ form label.error{
   display: inline-block;
   margin: 0 7px;
   font-size: 32px;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .banner-eight .bx-controls .bx-prev:hover,
 .banner-eight .bx-controls .bx-next:hover{
-  color: #d8f744;
+  color: #e1ec50;
 }
 
 /*** 
@@ -5669,9 +5666,9 @@ form label.error{
 .banner-nine .slide-item .text-content .inner-box{
   position: relative;
   display: block;
-  background: #101010;
+  background: #212e45;
   font-family: 'Telegraf_UltraLight', sans-serif;
-  color: #ffffff;
+  color: #faf9f6;
   padding: 40px 40px;
   border-radius: 20px;
 }
@@ -5695,7 +5692,7 @@ form label.error{
   font-family: 'Telegraf_UltraLight', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: none;
   line-height:1.0em;
   margin:0px 0px 15px;
@@ -5708,7 +5705,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 100px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: uppercase;
   line-height:1.1em;
   margin:0px 0px;
@@ -5744,7 +5741,7 @@ form label.error{
   left: 0;
   top: 0;
   width: 50%;
-  border-bottom: 2px solid #d8f744;
+  border-bottom: 2px solid #e1ec50;
 }
 
 .banner-nine .slide-item .links-box .link{
@@ -5768,7 +5765,7 @@ form label.error{
   display: inline-block;
   margin: 0 0;
   font-size: 40px;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .banner-nine .bx-controls .bx-next{
@@ -5778,12 +5775,12 @@ form label.error{
   display: inline-block;
   margin: 0 0;
   font-size: 40px;
-  color: #ffffff;
+  color: #faf9f6;
 }
 
 .banner-nine .bx-controls .bx-prev:hover,
 .banner-nine .bx-controls .bx-next:hover{
-  color: #d8f744;
+  color: #e1ec50;
 }
 
 /*** 
@@ -5912,7 +5909,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 60px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: uppercase;
   line-height:1.1em;
   margin:0px 0px;
@@ -5923,7 +5920,7 @@ form label.error{
   font-family: 'Telegraf_UltraLight', sans-serif;
   font-weight: 400;
   font-size: 26px;
-  color: #d8f744;
+  color: #e1ec50;
   text-transform: none;
   line-height:1.0em;
   margin:0px 0px 15px;
@@ -5980,7 +5977,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 50px;
-  color: #d8f744;
+  color: #e1ec50;
   line-height: 110px;
   height: 110px;
   border-radius: 10px;
@@ -6025,7 +6022,7 @@ form label.error{
   display: block;
   margin: 0 0;
   font-size: 32px;
-  color: #ffffff;
+  color: #faf9f6;
   background: #383d42;
   width: 125px;
   height: 125px;
@@ -6039,14 +6036,14 @@ form label.error{
 }
 
 .banner-ten .bx-controls .bx-next{
-  color: #101010;
-  background: #d8f744;
+  color: #212e45;
+  background: #e1ec50;
 }
 
 .banner-ten .bx-controls .bx-prev:hover,
 .banner-ten .bx-controls .bx-next:hover{
-  color: #101010;
-  background: #d8f744;
+  color: #212e45;
+  background: #e1ec50;
 }
 
 /*** 
@@ -6257,7 +6254,7 @@ form label.error{
   font-family: 'Monument_Extended_Regular', sans-serif;
   font-weight: 400;
   font-size: 60px;
-  color: #ffffff;
+  color: #faf9f6;
   text-transform: uppercase;
   line-height:1.2em;
   margin:0px 0px;
@@ -6304,7 +6301,7 @@ form label.error{
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.20);
   border-radius: 5px;
-  color: #ffffff;
+  color: #faf9f6;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
   -o-transition:all 500ms ease;
@@ -6314,9 +6311,9 @@ form label.error{
 
 .banner-eleven .bx-controls .bx-prev:hover,
 .banner-eleven .bx-controls .bx-next:hover{
-  color: #101010;
-  border-color: #d8f744;
-  background: #d8f744;
+  color: #212e45;
+  border-color: #e1ec50;
+  background: #e1ec50;
 }
 
 /* Cursor*/ 
@@ -6345,7 +6342,7 @@ form label.error{
   width: 22px;
   height: 22px;
   margin: -11px 0 0 -11px;
-  background: #d8f744;
+  background: #e1ec50;
   border-radius: 50%;
   -ms-animation: cursorAnim2 1.5s infinite alternate;
   animation: cursorAnim2 1.5s infinite alternate;
@@ -6381,5 +6378,5 @@ form label.error{
 }
 .expand {
   animation: cursorAnim3 0.5s forwards;
-  border: 1px solid #d8f744;
+  border: 1px solid #e1ec50;
 }
