@@ -1096,7 +1096,7 @@ form label.error{
   transform-origin: left top;
   transform: rotate(-90deg);
   font-size: 14px;
-  font-color: #e1ec50;
+  font-color: rgba(225, 236, 80, 1);
 }
 
 .main-header-bar .alt-logo-box{
