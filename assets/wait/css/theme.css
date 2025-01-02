@@ -20217,7 +20217,7 @@ body.ui-dark div#fp-nav ul li a span {
 }
 
 .mfp-close-btn-in .mfp-close-btn-white .mfp-close {
-  color: #fff;
+  color: #d8f744;
 }
 
 /* Overlay at start */
@@ -20286,7 +20286,7 @@ body.ui-dark div#fp-nav ul li a span {
 }
 
 .mfp-close-btn-in .mfp-ajax-holder .mfp-close:hover {
-  color: #037de8;
+  color: #faf9f6;
 }
 
 button.mfp-arrow {
@@ -20316,7 +20316,7 @@ button.mfp-arrow.mfp-arrow-right::after {
   padding: 0;
   margin: 0;
   border: 0;
-  color: #fff;
+  color: #212e45;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 32px;
