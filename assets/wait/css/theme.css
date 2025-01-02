@@ -2439,7 +2439,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #030507;
+  color: #e1ec50;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2498,7 +2498,7 @@ fieldset:disabled a.btn {
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #405be8;
+  background-color: #0b192c;
   border-color: #405be8;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
