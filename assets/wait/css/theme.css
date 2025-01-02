@@ -6450,19 +6450,19 @@ button.bg-white:focus {
 }
 
 .border-primary {
-  border-color: #405be8 !important;
+  border-color: #d8f744 !important;
 }
 
 .border-secondary {
-  border-color: #768394 !important;
+  border-color: #212e45 !important;
 }
 
 .border-success {
-  border-color: #21ce5b !important;
+  border-color: #d8f744 !important;
 }
 
 .border-info {
-  border-color: #19bee0 !important;
+  border-color: #212e45 !important;
 }
 
 .border-warning {
@@ -6474,19 +6474,19 @@ button.bg-white:focus {
 }
 
 .border-light {
-  border-color: #f3f5f7 !important;
+  border-color: #faf9f6 !important;
 }
 
 .border-dark {
-  border-color: #030507 !important;
+  border-color: #0b192c !important;
 }
 
 .border-white {
-  border-color: #fff !important;
+  border-color: #d8f744 !important;
 }
 
 .border-white {
-  border-color: #fff !important;
+  border-color: #d8f744 !important;
 }
 
 .rounded-sm {
