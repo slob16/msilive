@@ -26,88 +26,82 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/wait/css/custom.css">
+    <script src="https://kit.fontawesome.com/a7a023d9b8.js" crossorigin="anonymous"></script>
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="css/responsive.css" rel="stylesheet">
 
   </head>
-  <body class="layout-boxed slideshow-zoomout-background">
+	<body>
+	 <div class="site-container">
+    <div class="cursor"></div>
+    <!-- Preloader -->
+    <div class="preloader"></div>
 
-    <!-- Loader -->
-    <div class="loader bg-dark">
-      <div class="spinner-grow text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
+    <div class="menu-backdrop"></div>
+        
+    <!-- Main Header Bar-->
+    <header class="main-header-bar">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <!--Header-Upper-->
+        <div class="header-bar-inner">
+            <div class="outer-box clearfix">
+                
+                <!--Nav Toggler-->
+                <div class="nav-toggler"><button class="toggler-btn"><span class="bar bar-one"></span><span class="bar bar-two"></span><span class="bar bar-three"></span></button></div>
+                
+               <!--Social Links-->
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="https://www.linkedin.com/company/media-stacks"><span class="fab fa-linkedin"></span></a></li>
+                        <li><a href="lana-wait.html"><span class="fa-solid fa-stopwatch-20"></span></a></li>
+                        <li><a href="contact.html"><span class="fa fa-envelope"></span></a></li>
+                    </ul>
+                </div>
+                
+                <!--Copyright Text-->
+                <div class="copyright">&copy; Media Stacks Int. 2024</div>
+            </div>
 
-    <div id="top"></div>
-
-    <!-- Site navigation -->
-    <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" class="navbar-brand-img" alt="">
-      </a>
-
-      <!-- Toggler -->
-      <button class="navbar-toggler-alternative" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-alternative-icon"></span>
-      </button>
-
-      <!-- Collapse -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-
-        <!-- Navigation -->
-        <ul class="navbar-nav ml-auto" id="navigation">
-          <li class="nav-item active" data-menuanchor="home">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link" href="#our-mission">Our mission</a>
-          </li>
-          <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="#what-we-do">What we do</a>
-          </li>
-          <li class="nav-item" data-menuanchor="our-solutions">
-            <a class="nav-link" href="#our-solutions">Our solutions</a>
-          </li>
-          <li class="nav-item" data-menuanchor="our-work">
-            <a class="nav-link" href="#our-work">Our work</a>
-          </li>
-          <li class="nav-item" data-menuanchor="contact">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Button -->
-        <button type="button" class="btn btn-soft-white d-block d-lg-none d-xl-inline-block mb-3 mb-lg-0 ml-lg-3 w-100 w-lg-auto" data-toggle="modal" data-target="#documentationModal" data-on-navbar-light="btn-soft-secondary" data-on-navbar-dark="btn-soft-white">Documentation</button>
-
-        <!-- Button -->
-        <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3" href="!#">Buy now</a>
-
-      </div>
-    </nav>
-
-    <!-- Back To Top Button -->
-    <a href="#top" class="backtotop">
-      <span>Back To Top</span>
-      <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Global overlay -->
-    <div class="overlay overlay-global">
-      <div class="overlay-inner bg-dark opacity-70"></div>
-    </div>
-
-    <!-- Scroll progress -->
-    <div class="scroll-progress">
-      <div class="sp-left">
-        <div class="sp-inner"></div>
-        <div class="sp-inner progress"></div>
-      </div>
-      <div class="sp-right">
-        <div class="sp-inner"></div>
-        <div class="sp-inner progress"></div>
-      </div>
-    </div>
+            <!--Alt Logo Box-->
+            <div class="alt-logo-box"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            
+            <!--Nav Bg Box-->
+            <div class="nav-bg-box"></div>
+            
+            <!--Main Nav Outer-->
+            <div class="main-nav-outer">
+                <div class="nav-closer"><img src="images/icons/close-icon.png" alt=""></div>
+                <div class="outer-nav-box">
+                    <div class="top-bg"></div>
+                    <div class="bottom-bg"></div>
+                    <div class="main-nav-box" data-scrollbar="">
+                        <!--Logo Box-->
+                        <div class="main-logo-box"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                        <div class="main-nav">
+                            <ul class="navigation">
+                                <li><a href="index.html">home</a></li>
+                                </li>
+                                <li><a>ecosystem - coming soon</a></li>
+                                </li>
+                                <li class="current"><a href="about.html">about us</a></li>
+                                </li>
+                                <li><a href="contact.html">get in touch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+    </header>	
 
     <!-- Fullpage content -->
     <div class="ln-fullpage" data-navigation="true">
@@ -133,37 +127,29 @@
       <!-- Section - Our work -->
       <!-- Section - Contact -->
     <!-- Footer -->
-    <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-xl-12 col-xxl-10 mx-auto text-center">
-            <ul class="list-inline mb-5">
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-facebook-f btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-twitter btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-dribbble btn-icon-inner"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="mb-0">© 2023 Lana - All Rights Reserved - <a href="#!" class="text-gray-400">Terms of Service</a></p>
-          </div>
+   <footer class="main-footer">
+    <button class="scroll-top scroll-to-target" data-target="html" id="scroll-to-top">
+        <span class="icon fa fa-arrow-alt-circle-up"></span>
+    </button>
+    <div class="footer-inner">
+        <div class="auto-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="info">
+                <div class="row clearfix">
+                    <div class="footer-links">
+                        <!-- Centralized Links -->
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                        <span>|</span>
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer><!-- footer end -->
+    </div>
+</footer>
+	    <!-- footer end -->
 
     <!-- Fullpage - Social icons -->
     <!-- Fullpage - Copyright -->
@@ -253,6 +239,16 @@
 
     <!-- Theme JS -->
     <script src="assets/wait/js/main.js"></script>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/smooth-scrollbar.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/cursor-script.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/custom-script.js"></script>
 
     <script>
     // Slideshow ZoomOut Background
