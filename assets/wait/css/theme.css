@@ -1,22 +1,142 @@
-/*
-Theme Name: Lana
-Description: Creative Coming Soon Template
-Author: Tektonthemes
-Theme URI: https://preview.erilisdesign.com/html/lana/
-Author URI: https://themeforest.net/user/tektonthemes
-Version: 2.2
-License: https://themeforest.net/licenses/standard
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-SASS Stylesheet
+/*
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Khula', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 */
 
+@import url('font-awesome.css');
+@import url('simple-line-icons.css');
+@import url('animate.css');
+@import url('owl.css');
+@import url('smooth-scrollbar.css');
+@import url('scrollbar.css');
+@import url('jquery.fancybox.min.css');
+
+@font-face {
+    font-family: 'Gotham_Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Book.woff') format('woff'),
+         url('../fonts/Gotham-Book.ttf') format('truetype'),
+         url('../fonts/Gotham-Book.svg#Gotham_Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Light';
+    src: url('../fonts/Gotham-Light.eot');
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Light.woff') format('woff'),
+         url('../fonts/Gotham-Light.ttf') format('truetype'),
+         url('../fonts/Gotham-Light.svg#Gotham_Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Thin';
+    src: url('../fonts/Gotham-Thin.eot');
+    src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Thin.woff') format('woff'),
+         url('../fonts/Gotham-Thin.ttf') format('truetype'),
+         url('../fonts/Gotham-Thin.svg#Gotham_Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Medium.woff') format('woff'),
+         url('../fonts/Gotham-Medium.ttf') format('truetype'),
+         url('../fonts/Gotham-Medium.svg#Gotham_Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Bold';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Bold.woff') format('woff'),
+         url('../fonts/Gotham-Bold.ttf') format('truetype'),
+         url('../fonts/Gotham-Bold.svg#Gotham_Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Black';
+    src: url('../fonts/Gotham-Black.eot');
+    src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Black.woff') format('woff'),
+         url('../fonts/Gotham-Black.ttf') format('truetype'),
+         url('../fonts/Gotham-Black.svg#Gotham_Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Regular';
+    src: url('../fonts/MonumentExtended-Regular.eot');
+    src: url('../fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Regular.woff') format('woff'),
+         url('../fonts/MonumentExtended-Regular.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Regular.svg#Monument_Extended_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Ultrabold';
+    src: url('../fonts/MonumentExtended-Ultrabold.eot');
+    src: url('../fonts/MonumentExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Ultrabold.woff') format('woff'),
+         url('../fonts/MonumentExtended-Ultrabold.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Ultrabold.svg#Monument_Extended_Ultrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraLight';
+    src: url('../fonts/Telegraf-UltraLight.eot');
+    src: url('../fonts/Telegraf-UltraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraLight.woff') format('woff'),
+         url('../fonts/Telegraf-UltraLight.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraLight.svg#Telegraf_UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_Regular';
+    src: url('../fonts/Telegraf-Regular.eot');
+    src: url('../fonts/Telegraf-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-Regular.woff') format('woff'),
+         url('../fonts/Telegraf-Regular.ttf') format('truetype'),
+         url('../fonts/Telegraf-Regular.svg#Telegraf_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraBold';
+    src: url('../fonts/Telegraf-UltraBold.eot');
+    src: url('../fonts/Telegraf-UltraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraBold.woff') format('woff'),
+         url('../fonts/Telegraf-UltraBold.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraBold.svg#Telegraf_UltraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @charset "UTF-8";
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #405be8;
   --indigo: #4b21ff;
