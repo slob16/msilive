@@ -68,13 +68,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #030507;
+  color: #faf9f6;
   text-align: left;
-  background-color: #fff;
+  background-color: #0b192c;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -167,12 +167,12 @@ sup {
 }
 
 a {
-  color: #405be8;
+  color: #e1ec50;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #1a39db;
+  color: #0b192c;
   text-decoration: none;
 }
 
@@ -220,7 +220,7 @@ table {
 caption {
   padding-top: 1rem 1.5rem;
   padding-bottom: 1rem 1.5rem;
-  color: #768394;
+  color: #e1ec50;
   text-align: left;
   caption-side: bottom;
 }
@@ -444,7 +444,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #0b192c;
 }
 
 .list-unstyled {
