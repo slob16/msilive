@@ -1,12 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Khula', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+*/
+
+@import url('font-awesome.css');
+@import url('simple-line-icons.css');
+@import url('animate.css');
+@import url('owl.css');
+@import url('smooth-scrollbar.css');
+@import url('scrollbar.css');
+@import url('jquery.fancybox.min.css');
+
+@font-face {
+    font-family: 'Gotham_Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Book.woff') format('woff'),
+         url('../fonts/Gotham-Book.ttf') format('truetype'),
+         url('../fonts/Gotham-Book.svg#Gotham_Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Light';
+    src: url('../fonts/Gotham-Light.eot');
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Light.woff') format('woff'),
+         url('../fonts/Gotham-Light.ttf') format('truetype'),
+         url('../fonts/Gotham-Light.svg#Gotham_Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Thin';
+    src: url('../fonts/Gotham-Thin.eot');
+    src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Thin.woff') format('woff'),
+         url('../fonts/Gotham-Thin.ttf') format('truetype'),
+         url('../fonts/Gotham-Thin.svg#Gotham_Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Medium.woff') format('woff'),
+         url('../fonts/Gotham-Medium.ttf') format('truetype'),
+         url('../fonts/Gotham-Medium.svg#Gotham_Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Bold';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Bold.woff') format('woff'),
+         url('../fonts/Gotham-Bold.ttf') format('truetype'),
+         url('../fonts/Gotham-Bold.svg#Gotham_Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Black';
+    src: url('../fonts/Gotham-Black.eot');
+    src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Black.woff') format('woff'),
+         url('../fonts/Gotham-Black.ttf') format('truetype'),
+         url('../fonts/Gotham-Black.svg#Gotham_Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Regular';
+    src: url('../fonts/MonumentExtended-Regular.eot');
+    src: url('../fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Regular.woff') format('woff'),
+         url('../fonts/MonumentExtended-Regular.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Regular.svg#Monument_Extended_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Ultrabold';
+    src: url('../fonts/MonumentExtended-Ultrabold.eot');
+    src: url('../fonts/MonumentExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Ultrabold.woff') format('woff'),
+         url('../fonts/MonumentExtended-Ultrabold.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Ultrabold.svg#Monument_Extended_Ultrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraLight';
+    src: url('../fonts/Telegraf-UltraLight.eot');
+    src: url('../fonts/Telegraf-UltraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraLight.woff') format('woff'),
+         url('../fonts/Telegraf-UltraLight.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraLight.svg#Telegraf_UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_Regular';
+    src: url('../fonts/Telegraf-Regular.eot');
+    src: url('../fonts/Telegraf-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-Regular.woff') format('woff'),
+         url('../fonts/Telegraf-Regular.ttf') format('truetype'),
+         url('../fonts/Telegraf-Regular.svg#Telegraf_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraBold';
+    src: url('../fonts/Telegraf-UltraBold.eot');
+    src: url('../fonts/Telegraf-UltraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraBold.woff') format('woff'),
+         url('../fonts/Telegraf-UltraBold.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraBold.svg#Telegraf_UltraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Container for the subscribe form */
 .subscribe-container {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #e1ec50;
+    border: 1px solid #d8f744; 
     border-radius: 10px;
-    background-color: transparent;
+    background-color: none;
 }
 
 /* Space for two lines of text */
@@ -19,12 +156,14 @@
 /* Customize the text font size and color */
 #line1 {
     font-size: 60px;
-    color: #df8744;
+    color: #d8f744; 
+    font-family: 'Cairo', sans-serif;
 }
 
 #line2 {
     font-size: 20px;
     color: #faf9f6;
+    font-family: 'Cairo', sans-serif;
 }
 
 /* Input fields styling */
@@ -37,9 +176,10 @@
 .input-group input {
     width: 48%;
     padding: 10px;
-    border: 1px solid #faf9f6;
+    border: 1px solid #0b192c; 
     border-radius: 5px;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Subscribe button styling */
@@ -47,7 +187,7 @@
     width: 100%;
     padding: 12px;
     border: none;
-    background-color: #0b192c;
+    background-color: #d8f744; 
     color: faf9f6;
     font-size: 16px;
     border-radius: 25px;
@@ -57,5 +197,5 @@
 }
 
 .subscribe-btn:hover {
-    background-color: #df8744;
+    background-color: #0b192c;
 }
