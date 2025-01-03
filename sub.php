@@ -1,6 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Include PHPMailer
+require 'vendor/autoload.php'; // Adjust path if you downloaded manually
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
     $name = htmlspecialchars(trim($_POST["name"]));
     $email = htmlspecialchars(trim($_POST["email"]));
 
@@ -10,23 +15,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Set the recipient email address
-    $to = "your-email@example.com"; // Replace with your email address
-
-    // Set the subject of the email
+    // Email content
     $subject = "New Subscriber: $name";
+    $message = "You have a new subscriber.<br><br>Name: $name<br>Email: $email";
 
-    // Set the message
-    $message = "You have a new subscriber.\n\nName: $name\nEmail: $email";
+    // PHPMailer setup
+    $mail = new PHPMailer(true);
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Gmail SMTP server
+        $mail->SMTPAuth = true;
+        $mail->Username = 'your-email@gmail.com'; // Your Gmail address
+        $mail->Password = 'your-gmail-password'; // Your Gmail password or App Password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    // Set the email headers
-    $headers = "From: $email" . "\r\n" . "Reply-To: $email" . "\r\n" . "X-Mailer: PHP/" . phpversion();
+        // Recipients
+        $mail->setFrom('no-reply@example.com', 'Website'); // Adjust "From" email and name
+        $mail->addAddress('your-email@gmail.com'); // Replace with your recipient email address
 
-    // Send the email
-    if (mail($to, $subject, $message, $headers)) {
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        // Send email
+        $mail->send();
         echo "Thank you for subscribing!";
-    } else {
-        echo "Something went wrong. Please try again later.";
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>
