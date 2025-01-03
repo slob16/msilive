@@ -186,7 +186,7 @@
 }
 
 #line2 {
-   position: relative;
+    position: relative;
     display: block;
     font-family: 'Telegraf_UltraLight', sans-serif;
     font-size: 24px;
@@ -199,6 +199,8 @@
 
 /* Input fields styling */
 .input-group {
+    position: relative;
+    display: block;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -218,7 +220,6 @@
     border-radius: 5px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    white-space: nowrap;
 }
 
 /* Subscribe button styling */
