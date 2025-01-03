@@ -1,0 +1,7 @@
+source "https://rubygems.org"  # Default Ruby gem source
+
+gem "jekyll"                # Jekyll itself
+gem "jekyll-sitemap"        # Jekyll Sitemap plugin
+gem "jekyll-feed"           # Optional: Jekyll Feed plugin (for RSS feed)
+# Add other plugins as needed
+
