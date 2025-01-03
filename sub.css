@@ -156,15 +156,16 @@
 
 /* Customize the text font size and color */
 #line1 {
-    font-size: 60px;
-    color: #d8f744; 
-    font-family: 'Cairo', sans-serif;
+    font-size: 62px;
+    font-family: 'Monument_Extended_Regular', sans-serif;
+    font-weight: 400;
+    color: #d8f744;
 }
 
 #line2 {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Telegraf_UltraLight', sans-serif;
     color: #faf9f6;
-    font-family: 'Cairo', sans-serif;
 }
 
 /* Input fields styling */
