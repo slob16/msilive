@@ -99,8 +99,7 @@
                     </div>
                 </div>
             </section>
-            <!--End Banner Section -->
-
+            <!--End Banner Section -->   
            <!-- Container for the subscribe form -->
 <section class="subscribe-container">
   <div class="auto-container">
@@ -109,14 +108,17 @@
         <p id="line1">Limitless Innovation</p>
         <p id="line2">We are building the ecosystem of tomorrow's digital media & entertainment landscape</p>
     </div>
-    <!-- The subscribe form -->
+
+     <!-- The subscribe form -->
     <form action="subscribe.php" method="post">
         <div class="input-group">
-            <!-- Name field -->
-            <input type="text" name="Name" placeholder="Your Name" required>
+            <!-- Name label and input field -->
+            <label for="name" class="input-label">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
             
-            <!-- Email field -->
-            <input type="email" name="Email" placeholder="Your Email" required>
+            <!-- Email label and input field -->
+            <label for="email" class="input-label">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
         
         <!-- Submit button with rounded corners -->
