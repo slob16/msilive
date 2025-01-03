@@ -20,8 +20,10 @@ theme: minima  # Jekyll's default theme, change to your own theme if desired
 
 # Plugins (Add plugins for SEO, Sitemap, etc.)
 plugins:
+  - jekyll-feed 
+  - jekyll-sitemap
   - jekyll-seo-tag  # Automatically generates SEO-related meta tags
-  - jekyll-sitemap  # Generates a sitemap.xml for search engines
+ 
 
 # SEO Plugin Configuration (for jekyll-seo-tag)
 defaults:
