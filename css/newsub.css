@@ -202,8 +202,6 @@
 .input-group {
     position: relative;
     display: block;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 15px;
 }
 
