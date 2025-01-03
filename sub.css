@@ -160,6 +160,7 @@
     font-family: 'Monument_Extended_Regular', sans-serif;
     font-weight: 400;
     color: #d8f744;
+    white-space: nowrap;
 }
 
 #line2 {
