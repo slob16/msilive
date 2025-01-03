@@ -176,6 +176,13 @@
     margin-bottom: 15px;
 }
 
+.input-group .input-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #0b192c;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .input-group input {
     width: 48%;
     padding: 10px;
@@ -191,7 +198,7 @@
     padding: 12px;
     border: none;
     background-color: #d8f744; 
-    color: faf9f6;
+    color: #0b192c;
     font-size: 16px;
     border-radius: 25px;
     cursor: pointer;
@@ -201,4 +208,6 @@
 
 .subscribe-btn:hover {
     background-color: #0b192c;
+    color: #d8f744; 
+    
 }
