@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Khula', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+*/
+
+@import url('font-awesome.css');
+@import url('simple-line-icons.css');
+@import url('animate.css');
+@import url('owl.css');
+@import url('smooth-scrollbar.css');
+@import url('scrollbar.css');
+@import url('jquery.fancybox.min.css');
+
+@font-face {
+    font-family: 'Gotham_Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Book.woff') format('woff'),
+         url('../fonts/Gotham-Book.ttf') format('truetype'),
+         url('../fonts/Gotham-Book.svg#Gotham_Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Light';
+    src: url('../fonts/Gotham-Light.eot');
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Light.woff') format('woff'),
+         url('../fonts/Gotham-Light.ttf') format('truetype'),
+         url('../fonts/Gotham-Light.svg#Gotham_Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Thin';
+    src: url('../fonts/Gotham-Thin.eot');
+    src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Thin.woff') format('woff'),
+         url('../fonts/Gotham-Thin.ttf') format('truetype'),
+         url('../fonts/Gotham-Thin.svg#Gotham_Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Medium.woff') format('woff'),
+         url('../fonts/Gotham-Medium.ttf') format('truetype'),
+         url('../fonts/Gotham-Medium.svg#Gotham_Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Bold';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Bold.woff') format('woff'),
+         url('../fonts/Gotham-Bold.ttf') format('truetype'),
+         url('../fonts/Gotham-Bold.svg#Gotham_Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham_Black';
+    src: url('../fonts/Gotham-Black.eot');
+    src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Black.woff') format('woff'),
+         url('../fonts/Gotham-Black.ttf') format('truetype'),
+         url('../fonts/Gotham-Black.svg#Gotham_Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Regular';
+    src: url('../fonts/MonumentExtended-Regular.eot');
+    src: url('../fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Regular.woff') format('woff'),
+         url('../fonts/MonumentExtended-Regular.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Regular.svg#Monument_Extended_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument_Extended_Ultrabold';
+    src: url('../fonts/MonumentExtended-Ultrabold.eot');
+    src: url('../fonts/MonumentExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonumentExtended-Ultrabold.woff') format('woff'),
+         url('../fonts/MonumentExtended-Ultrabold.ttf') format('truetype'),
+         url('../fonts/MonumentExtended-Ultrabold.svg#Monument_Extended_Ultrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraLight';
+    src: url('../fonts/Telegraf-UltraLight.eot');
+    src: url('../fonts/Telegraf-UltraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraLight.woff') format('woff'),
+         url('../fonts/Telegraf-UltraLight.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraLight.svg#Telegraf_UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_Regular';
+    src: url('../fonts/Telegraf-Regular.eot');
+    src: url('../fonts/Telegraf-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-Regular.woff') format('woff'),
+         url('../fonts/Telegraf-Regular.ttf') format('truetype'),
+         url('../fonts/Telegraf-Regular.svg#Telegraf_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf_UltraBold';
+    src: url('../fonts/Telegraf-UltraBold.eot');
+    src: url('../fonts/Telegraf-UltraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Telegraf-UltraBold.woff') format('woff'),
+         url('../fonts/Telegraf-UltraBold.ttf') format('truetype'),
+         url('../fonts/Telegraf-UltraBold.svg#Telegraf_UltraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* test container */
+
+/* Adjusted subscribe-container to use flex */
+.subscribe-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    padding: 0 0;
+}
+
+/* Adjust the auto-container if necessary */
+.subscribe-container .auto-container {
+    width: 100%;
+}
+
+/* Centered content box for text */
+.subscribe-container .content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    z-index: 10;
+}
+
+/* Text content styling */
+.subscribe-container .content {
+    text-align: center; /* Center content horizontally */
+    z-index: 5;
+}
+
+.subscribe-text p {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Line 1 styling */
+#line1 {
+    font-family: 'Monument_Extended_Regular', sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    color: #d8f744;
+    text-transform: uppercase;
+    line-height: 1.0em;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Line 2 styling */
+#line2 {
+    font-family: 'Telegraf_UltraLight', sans-serif;
+    font-size: 24px;
+    line-height: 1.6em;
+    color: #faf9f6;
+    white-space: nowrap;
+    padding-top: 5px;
+}
+
+/* Input fields styling */
+.input-group {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    margin-top: 20px;
+    width: 100%; /* Make sure the input is full-width within the container */
+}
+
+/* The input fields container, flex to ensure centering */
+.input-group .flex {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+}
+
+.input-group .input-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #d8f744;
+    font-family: 'Telegraf_UltraLight', sans-serif;
+}
+
+.input-group input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #0b192c; 
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Subscribe button styling */
+.subscribe-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #d8f744; 
+    color: #0b192c;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: rgba(11, 25, 44, 0.5);
+    color: #d8f744; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
