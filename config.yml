@@ -2,7 +2,7 @@
 title: "Media Stacks International"  # The title of your site, shown in search results
 description: "A brief description of your website for SEO purposes."
 url: "https://mediastacks.co.uk"  # Your site's URL (replace with your actual URL)
-baseurl: ""  # Leave empty if your site is hosted at the root level
+baseurl: "https://slob16.github.io/msilive/"  # Leave empty if your site is hosted at the root level
 
 # SEO Settings
 seo:
