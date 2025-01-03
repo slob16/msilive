@@ -1,22 +1,61 @@
-<!-- Container for the subscribe form -->
-<div class="subscribe-container">
-    <!-- Two lines of text above the form, customizable for font size and color -->
-    <div class="subscribe-text">
-        <p id="line1">Your custom message line 1</p>
-        <p id="line2">Your custom message line 2</p>
-    </div>
+/* Container for the subscribe form */
+.subscribe-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e1ec50;
+    border-radius: 10px;
+    background-color: transparent;
+}
 
-    <!-- The subscribe form -->
-    <form action="subscribe.php" method="post">
-        <div class="input-group">
-            <!-- Name field -->
-            <input type="text" name="name" placeholder="Your Name" required>
-            
-            <!-- Email field -->
-            <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-        
-        <!-- Submit button with rounded corners -->
-        <button type="submit" class="subscribe-btn">Subscribe</button>
-    </form>
-</div>
+/* Space for two lines of text */
+.subscribe-text p {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Customize the text font size and color */
+#line1 {
+    font-size: 60px;
+    color: #df8744;
+}
+
+#line2 {
+    font-size: 20px;
+    color: #faf9f6;
+}
+
+/* Input fields styling */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #faf9f6;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Subscribe button styling */
+.subscribe-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #0b192c;
+    color: faf9f6;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #df8744;
+}
