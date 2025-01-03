@@ -1,8 +1,8 @@
 # Basic Site Settings
 title: "Media Stacks International"  # The title of your site, shown in search results
-description: "A brief description of your website for SEO purposes."
+description: "Media and Entertainment ecosystem, innovation without boundaries, technology that transforms and shapes a greener tomorrow."
 url: "https://mediastacks.co.uk"  # Your site's URL (replace with your actual URL)
-baseurl: "https://slob16.github.io/msilive/"  # Leave empty if your site is hosted at the root level
+baseurl: ""  # Leave empty if your site is hosted at the root level
 
 # SEO Settings
 seo:
@@ -16,7 +16,7 @@ permalink: /:title  # Clean URLs, without .html (e.g., /about/ instead of /about
 markdown: kramdown  # The Markdown processor used by Jekyll
 
 # Theme (can be a Jekyll theme or a custom theme)
-theme: minima  # Jekyll's default theme, change to your own theme if desired
+theme: css/style.css" 
 
 # Plugins (Add plugins for SEO, Sitemap, etc.)
 plugins:
