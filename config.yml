@@ -1,0 +1,39 @@
+permalink: /:name
+
+
+pages:
+  - title: "Home"
+    url: "/"
+    file: "index.html"
+
+  - title: "About"
+    url: "/about/"
+    file: "about/index.html"
+
+  - title: "Contact"
+    url: "/contact/"
+    file: "contact/index.html"
+
+  - title: "Blog - First Post"
+    url: "/blog/first-post/"
+    file: "blog/first-post/index.html"
+
+  - title: "Blog - Second Post"
+    url: "/blog/second-post/"
+    file: "blog/second-post/index.html"
+
+
+index.html -> /home/index.html
+about.html -> /about/about.html
+contact.html -> /contact/contact.html
+comingsoon.html -> /ecosystem/comingsoon.html
+finance.html -> /finance/finance.html
+technology.html -> /technology/technology.html
+production.html -> /production/production.html
+partnerships.html -> /partnerships/partnerships.html
+esg.html -> /esg/esg.html
+ollywood.html -> /ollywood/ollywood.html
+waitlist.html -> /waitlist/subscribe.html
+404.html -> /404/404.html
+privacy-poliicy.html -> /privacy/privacy-policy.html
+terms-of-service.html -> /terms/terms-of-service.html
