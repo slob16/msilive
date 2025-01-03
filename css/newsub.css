@@ -205,6 +205,14 @@
     margin-bottom: 15px;
 }
 
+.input-group .flex center {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    height: 100vh; /* Full viewport height */
+   
+}
+
 .input-group .input-label {
     font-size: 18px;
     margin-bottom: 5px;
