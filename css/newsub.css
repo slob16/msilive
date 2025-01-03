@@ -206,10 +206,10 @@
 }
 
 .input-group .input-label {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 5px;
     color: #d8f744;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Telegraf_UltraLight', sans-serif;
 }
 
 .input-group input {
@@ -236,7 +236,7 @@
 }
 
 .subscribe-btn:hover {
-    background-color: #0b192c;
+    background-color: rgba(11, 25, 44, 0.5);
     color: #d8f744; 
     
 }
