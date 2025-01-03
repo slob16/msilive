@@ -204,6 +204,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Align vertically */
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%; /* Make sure the input is full-width within the container */
 }
 
@@ -220,6 +221,9 @@
     margin-bottom: 5px;
     color: #d8f744;
     font-family: 'Telegraf_UltraLight', sans-serif;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .input-group input {
